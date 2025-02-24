@@ -1,4 +1,4 @@
-![Mi encabezado](header.png)
+![Header](AvatarHeader.gif)
 
 I'm a <strong>Data Analyst</strong> driven by curiosity and a passion for turning raw data into actionable insights.
 <br> With experience in <strong>Power BI, SQL, and Python</strong>, I thrive on solving real-world problems through data-driven decision-making.
