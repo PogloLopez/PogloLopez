@@ -1,9 +1,7 @@
-<h1 align="center">Hey there! 👋 I'm Pablo López</h1>
-<h3 align="center">Driven by curiosity, powered by data.</h3>
+![Mi encabezado](header.png)
 
-<h4 align="center"> I'm a <strong>Junior Data Analyst</strong> passionate about transforming raw data into meaningful insights. 
-  <br> With experience in <strong>Power BI, SQL, and Python</strong>, I enjoy working on real-world data projects that drive better decision-making.
-</h4>
+I'm a <strong>Data Analyst</strong> driven by curiosity and a passion for turning raw data into actionable insights.
+<br> With experience in <strong>Power BI, SQL, and Python</strong>, I thrive on solving real-world problems through data-driven decision-making.
 
 ## 🚀 About Me
 - 📊 Skilled in **Data Visualization, SQL, and Power BI**
