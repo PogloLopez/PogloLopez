@@ -8,8 +8,12 @@ Welcome! Below is a categorized list of my certifications, primarily obtained th
 
 ## 🎓 Specializations
 
-### 📁 Google Data Analytics Professional Certificate (🟡 In Progress)  
+### 📁 Google Data Analytics Professional Certificate (✅ [Completed](https://coursera.org/share/cba1051ee71d7dc807abe01c08f3d5f3))    
 **Institution:** Google | Coursera  
+
+**Credly Credential:**  
+[<img src="/assets/credly_badge.png" width="100" alt="Badge">](https://www.credly.com/badges/69e73f74-d1ee-4aed-94b2-cf68d952c0e3/public_url)
+
 Focus: Data analytics foundations, data wrangling, visualization, and stakeholder communication.  
 - ✅ [Foundations: Data, Data, Everywhere](https://www.coursera.org/account/accomplishments/verify/3ZBP819GDXK9) – Data lifecycle, data-driven decision making, and analytical thinking  
 - ✅ [Ask Questions to Make Data-Driven Decisions](https://www.coursera.org/account/accomplishments/verify/86SVHNZGTS56) – Business goal alignment, problem-solving, and stakeholder communication  
@@ -17,8 +21,8 @@ Focus: Data analytics foundations, data wrangling, visualization, and stakeholde
 - ✅ [Process Data from Dirty to Clean](https://www.coursera.org/account/accomplishments/verify/8D8EJBNC224E) – Data cleaning with SQL, spreadsheets, and consistency checks  
 - ✅ [Analyze Data to Answer Questions](https://www.coursera.org/account/accomplishments/verify/M2S22GO09JZ2) – Exploratory data analysis, aggregations, and pivot tables  
 - ✅ [Share Data Through the Art of Visualization](https://www.coursera.org/account/accomplishments/verify/5ND59UKC9UAQ) – Data storytelling, Tableau, and visualization best practices
-- 🟡 Data Analysis with R Programming  
-- 🟡 Google Data Analytics Capstone  
+- ✅ [Data Analysis with R Programming](https://coursera.org/share/772dd7551dc31e4cfff6d96370b64f5a) – R programming basics, data manipulation with `dplyr`, and data visualization with `ggplot2`  
+- ✅ [Google Data Analytics Capstone](https://coursera.org/share/a9d3aa7de3dc11a8178e7379a77a16a1) – End-to-end data analysis project, portfolio development, and presentation of findings  
 
 ---
 
