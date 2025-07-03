@@ -1,4 +1,4 @@
-![Header](AvatarHeader.gif)
+![Header](/assets/AvatarHeader.gif)
 
 <div align="center">
   <h1>👋 Hi, I'm Pablo López</h1>
@@ -63,6 +63,18 @@
   ![Feature Engineering](https://img.shields.io/badge/feature--engineering-8B5CF6?style=for-the-badge&logo=python&logoColor=white)
   ![RFM Analysis](https://img.shields.io/badge/RFM--analysis-10B981?style=for-the-badge&logo=python&logoColor=white)
   ![Advanced SQL](https://img.shields.io/badge/advanced--sql-6366F1?style=for-the-badge&logo=sqlite&logoColor=white)
+</div>
+
+<div align="center">
+  <h2>📜 Certifications</h2>
+  
+  <p>
+    <strong>Explore my professional certifications and courses:</strong>
+    <br>
+    <a href="https://github.com/PogloLopez/PogloLopez/blob/main/CERTIFICATES.md">
+      <img src="https://img.shields.io/badge/View_Certificates-218BFF?style=for-the-badge&logo=github&logoColor=white" alt="View Certificates">
+    </a>
+  </p>
 </div>
 
 <div align="center">
