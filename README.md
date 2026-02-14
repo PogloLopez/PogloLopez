@@ -1,4 +1,4 @@
-![Header](/assets/AvatarHeader.gif)
+![Header](/assets/readme_header.gif)
 
 <div align="center">
   <h1>Hi, I'm Pablo López</h1>
