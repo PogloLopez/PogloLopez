@@ -59,6 +59,10 @@ Focus: Statistical analysis, visualization, and analytical storytelling.
 
 ## 🧩 Standalone Certificates
 
+- ✅ **Claude Code in Action**  
+  [Anthropic Education – Apr. 2026](https://verify.skilljar.com/c/p9vx4zqdt8mf)  
+  *Skills: Practical application of Claude models, AI tools, and prompt engineering.*
+
 - ✅ **Professional Fundamentals of Data Analysis**  
   [Microsoft | LinkedIn Learning – Dec. 2024](https://www.linkedin.com/learning/certificates/a0aec5483e762e4a41754e29706fead3f4a0509d17230bb39d82e39f3e604c8d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeBRMK%2BfNThm8WujysDzSFQ%3D%3D)  
   *Skills: Basic data concepts, data ethics, analytical thinking, and business impact.*
