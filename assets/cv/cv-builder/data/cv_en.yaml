@@ -19,12 +19,12 @@ links:
     url: 'https://github.com/PogloLopez'
 
 profile: >-
-  Data & AI Automation Engineer specializing in the design and implementation of data architectures featuring
-  centralized orchestration, MLOps infrastructure, and automation pipelines, reducing operational
-  bottlenecks and optimizing strategic data-driven decision-making. Proven track record of building
-  technical projects end-to-end, connecting abstract components into scalable, interconnected
-  systems. Skilled at translating complex business requirements into scalable technical
-  infrastructure.
+  Data & AI Automation Engineer specialized in data engineering, automation, and AI systems. I design
+  and implement data architectures, MLOps infrastructure, and automation pipelines, and bring AI to the
+  core of operations through agentic systems and models that turn manual processes into autonomous
+  workflows. I build technical projects end-to-end,
+  from data extraction through modeling, orchestration, and interface, integrating LLMs to automate
+  analysis, generate insights, and support business decisions at scale.
 
 skills:
   - category: 'Data Engineering'
@@ -47,20 +47,28 @@ experience:
     start: 'July 2025'
     end: 'Present'
     summary: >-
-      Spearheading technical modernization efforts by migrating siloed, manual processes toward a
-      centralized, automated, and scalable data architecture.
+      Leading the company's data and automation engineering, driving end-to-end the shift from
+      siloed, manual processes to a centralized architecture with in-house MLOps, autonomous demand
+      forecasting, and price intelligence, plus internal tools already adopted across multiple
+      business areas.
     bullets:
       - lead: 'MLOps Infrastructure & Data Autonomy'
         text: >-
-          Pioneered the design and creation of an end-to-end MLOps infrastructure for autonomous
-          demand forecasting. Achieved a *30%* improvement in forecast *accuracy* and a *3%*
-          reduction in *stockouts* for high-priority products (A class), while eliminating
-          reliance on third-party ERP providers.
-      - lead: 'Supply Chain Intelligence (AgTech/Livestock)'
+          Led the design and implementation of an end-to-end MLOps infrastructure for autonomous
+          demand forecasting, reaching *70-82%* forecast accuracy depending on the cluster and
+          driving a decisive reduction in *stockouts* from a historical *12-20%* range to around
+          *8%*.
+      - lead: 'Market Price Intelligence'
         text: >-
-          Developed an automated *web scraping* system to monitor livestock prices (beef, pork,
-          poultry) and meat cuts, enabling data-driven negotiations for the company's meat
-          production center.
+          Designed and built an internal analytics platform that forecasts wholesale agricultural
+          product prices *52 weeks* ahead using per-cluster ML models (*XGBoost/LightGBM*) and
+          generates *automated AI insights* (Claude), delivered through a custom web app that
+          benchmarks the market against internal prices to anticipate purchasing decisions.
+      - lead: 'Stock-Transfer Planning Automation'
+        text: >-
+          Built the web tool the *purchasing analysts* use to plan inventory transfers between stores;
+          it cuts each transfer plan from hours to minutes (*1-4 hours saved per run*) and improves
+          merchandise-reallocation decisions, reducing overstock and stockouts across stores.
       - lead: 'Centralized Orchestration (Dagster)'
         text: >-
           Deployed and configured an orchestration platform on a dedicated *Linux* server to
@@ -72,12 +80,6 @@ experience:
           Established the corporate development ecosystem on *GitHub*, implementing coding rules,
           version control, and *agentic workflows* using Claude AI to standardize internal
           software production.
-      - lead: 'Infrastructure Security'
-        text: >-
-          Designed a technical roadmap to migrate legacy data flows (FTP) to secure protocols
-          (*SFTP/SSH*). Planned the transition from daily full-refresh loads to hourly incremental
-          extraction pipelines to enhance data availability, cybersecurity compliance and
-          information integrity.
   - company: 'Latin America Sourcing'
     location: 'Remote'
     role: 'Business Analyst'

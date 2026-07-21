@@ -19,12 +19,13 @@ links:
     url: 'https://github.com/PogloLopez'
 
 profile: >-
-  Data & AI Automation Engineer, con enfoque en el diseño e implementación de arquitecturas de datos con
-  orquestación centralizada, infraestructura MLOps y pipelines de automatización, que reducen los
-  cuellos de botella y optimizan la toma de decisiones estratégicas basadas en datos. Construyendo
-  proyectos técnicos de principio a fin, conectando piezas abstractas en sistemas interconectados y
-  escalables. Capacidad para traducir necesidades complejas de negocio en infraestructura técnica
-  escalable.
+  Data & AI Automation Engineer especializado en ingeniería de datos, automatización y sistemas de IA.
+  Diseño e implemento arquitecturas de datos, infraestructura MLOps y pipelines de automatización, y
+  llevo la IA al núcleo de la operación mediante sistemas agénticos y modelos que convierten procesos
+  manuales en flujos autónomos. Construyo
+  proyectos técnicos de punta a punta, desde la extracción de datos hasta el modelo, la orquestación y
+  la interfaz, integrando LLMs para automatizar análisis, generar insights y sostener decisiones de
+  negocio a escala.
 
 skills:
   - category: 'Ingeniería de datos'
@@ -47,20 +48,30 @@ experience:
     start: 'Julio 2025'
     end: 'Actualidad'
     summary: >-
-      Liderazgo de procesos de modernización técnica de Mercaldas, migrando procesos aislados y
-      mecánicos hacia una arquitectura de datos centralizada, automatizada y escalable.
+      Lidero la ingeniería de datos y automatización de la compañía, impulsando de punta a punta la
+      transición de procesos manuales y aislados hacia una arquitectura centralizada con
+      infraestructura MLOps, forecasting autónomo de demanda e inteligencia de precios, con
+      herramientas internas ya adoptadas por distintas áreas del negocio.
     bullets:
       - lead: 'Infraestructura MLOps & Autonomía de Datos'
         text: >-
-          Lideré el diseño e implementación de una arquitectura MLOps completa, para la generación
-          autónoma de pronósticos de demanda, mejorando la asertividad de los pronósticos de
-          demanda en un *30%*, reduciendo el porcentaje de productos *agotados* (Clase A) en un
-          *3%* y eliminando la dependencia de proveedores externos.
-      - lead: 'Inteligencia de Suministros (AgTech/Livestock)'
+          Lideré el diseño e implementación de una arquitectura MLOps completa para la generación
+          autónoma de pronósticos de demanda, alcanzando una asertividad del *70-82%* según el
+          cluster y contribuyendo de forma decisiva a reducir los productos *agotados* de un rango
+          histórico del *12-20%* a cerca del *8%*.
+      - lead: 'Inteligencia de Precios de Mercado'
         text: >-
-          Desarrollo de un sistema de *web scraping* para el monitoreo de precios de animales en
-          pie (res, cerdo, pollo) y cortes cárnicos, permitiendo una negociación basada en datos
-          para el centro de producción de carnes de la empresa.
+          Diseñé y construí una plataforma analítica interna que anticipa los precios mayoristas de
+          productos agrícolas con *forecasting a 52 semanas* mediante modelos de ML por cluster
+          (*XGBoost/LightGBM*) y genera *insights automatizados con IA* (Claude), servidos en una
+          aplicación web propia que compara el mercado contra los precios internos, para anticipar
+          decisiones de compra.
+      - lead: 'Automatización de Planeación de Traslados'
+        text: >-
+          Desarrollé la herramienta web con la que los *analistas de compras* planifican los traslados
+          de inventario entre puntos de venta; reduce el armado de cada plan de traslados de horas a
+          minutos (*1-4 h ahorradas por ejecución*) y mejora las decisiones de reubicación de
+          mercancía, disminuyendo sobrestock y agotados entre tiendas.
       - lead: 'Orquestación Centralizada (Dagster)'
         text: >-
           Despliegue y configuración de una plataforma de orquestación en un servidor *Linux*
@@ -72,12 +83,6 @@ experience:
           Establecí el ecosistema de desarrollo empresarial en *GitHub*, implementando reglas de
           código, control de versiones y *flujos de trabajo agénticos* con Claude AI para
           estandarizar la producción de software interno.
-      - lead: 'Seguridad de Infraestructura'
-        text: >-
-          Diseño técnico de un roadmap de migración de flujos de datos legados (FTP) hacia
-          protocolos seguros (*SFTP/SSH*), proyectando la transición de cargas completas diarias
-          hacia pipelines de extracción incremental por hora para optimizar la disponibilidad del
-          dato, el cumplimiento de estándares de ciberseguridad y la integridad de la información.
   - company: 'Latin America Sourcing'
     location: 'Remoto'
     role: 'Business Analyst'

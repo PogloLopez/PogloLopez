@@ -15,8 +15,14 @@ es una aplicación — son documentos + un pipeline de CV.
 ## CV (Typst + YAML)
 
 - Contenido: `assets/cv/cv-builder/data/cv_es.yaml` y `cv_en.yaml` — mismo esquema y mismo orden de
-  claves a propósito. Un cambio de contenido en un idioma debe replicarse (traducido, no copiado)
-  en el otro antes de darse por terminado.
+  claves a propósito.
+- **Regla estricta — los dos CV son reflejos fieles el uno del otro, siempre.** Todo cambio en un
+  idioma (contenido, bullets, orden, métricas, fraseo, puntuación) debe reflejarse traducido —no
+  copiado— en el otro dentro del mismo cambio, nunca después. Ningún cambio se da por terminado si un
+  idioma quedó distinto del otro. La única diferencia admisible entre ambos es el idioma; cualquier
+  otra divergencia es un error a corregir. Salvedad: la puntuación sigue la norma de cada idioma
+  cuando su gramática difiere (no se copia una coma si en el otro idioma es incorrecta) — el reflejo
+  es de contenido y significado, no de caracteres.
 - Layout: `assets/cv/cv-builder/template.typ` — puramente estructural, sin texto de ningún idioma.
 - Entrypoint de build: `assets/cv/cv-builder/build.py`. Para generar/regenerar el CV:
   `cd assets/cv/cv-builder && uv run build.py` (venv aislado en `.venv/`, gestionado por `uv`, no
