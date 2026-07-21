@@ -1,0 +1,137 @@
+labels:
+  profile: "Profile"
+  skills: "Skills"
+  experience: "Experience"
+  education: "Education"
+  certificates: "Certificates & Courses"
+  references: "References"
+
+first_name: "Pablo Alejandro"
+last_name: "López Sánchez"
+title: "Analytics Engineer"
+location: "Manizales, Colombia"
+phone: "+57 318 766 2292"
+email: "poglolopez@gmail.com"
+links:
+  - label: "LinkedIn"
+    url: "https://linkedin.com/in/pablo-a-lopez-s"
+  - label: "GitHub"
+    url: "https://github.com/PogloLopez"
+
+profile: >-
+  Analytics Engineer specializing in the design and implementation of data architectures featuring
+  centralized orchestration, MLOps infrastructure, and automation pipelines, reducing operational
+  bottlenecks and optimizing strategic data-driven decision-making. Proven track record of building
+  technical projects end-to-end, connecting abstract components into scalable, interconnected
+  systems. Skilled at translating complex business requirements into scalable technical
+  infrastructure.
+
+skills:
+  - category: "Data Engineering"
+    items: "Python (Polars, SQLAlchemy, FastAPI), SQL (SQL Server, PostgreSQL), ETL Pipelines, Web Scraping (Selenium, Scrapy)."
+  - category: "Infrastructure & Orchestration"
+    items: "Dagster, Docker, SSH/SFTP, Linux Server, Git/GitHub, Data Flow Modeling."
+  - category: "Analytics"
+    items: "Power BI (DAX, Power Query), KPI Analysis."
+  - category: "Business Strategy"
+    items: "Project Management, Demand Planning, Inventory Optimization."
+  - category: "Languages"
+    items: "English (B2-C1), Spanish (Native)."
+
+experience:
+  - company: "Mercaldas"
+    location: "Manizales, Colombia"
+    role: "Data Analyst | Analytics Engineer"
+    start: "July 2025"
+    end: "Present"
+    summary: >-
+      Spearheading technical modernization efforts by migrating siloed, manual processes toward a
+      centralized, automated, and scalable data architecture.
+    bullets:
+      - lead: "MLOps Infrastructure & Data Autonomy"
+        text: >-
+          Pioneered the design and creation of an end-to-end MLOps infrastructure for autonomous
+          demand forecasting. Achieved a *30%* improvement in forecast *accuracy* and a *3%*
+          reduction in *stockouts* for high-priority products (A class), while eliminating
+          reliance on third-party ERP providers.
+      - lead: "Supply Chain Intelligence (AgTech/Livestock)"
+        text: >-
+          Developed an automated *web scraping* system to monitor livestock prices (beef, pork,
+          poultry) and meat cuts, enabling data-driven negotiations for the company's meat
+          production center.
+      - lead: "Centralized Orchestration (Dagster)"
+        text: >-
+          Deployed and configured an orchestration platform on a dedicated *Linux* server to
+          unify dispersed processes. Designed to automate manual executions and optimize failure
+          monitoring, resulting in an estimated reduction of \~4 operational hours per week per
+          user for the IT and Demand Planning teams.
+      - lead: "Governance & DevSecOps"
+        text: >-
+          Established the corporate development ecosystem on *GitHub*, implementing coding rules,
+          version control, and *agentic workflows* using Claude AI to standardize internal
+          software production.
+      - lead: "Infrastructure Security"
+        text: >-
+          Designed a technical roadmap to migrate legacy data flows (FTP) to secure protocols
+          (*SFTP/SSH*). Planned the transition from daily full-refresh loads to hourly incremental
+          extraction pipelines to enhance data availability, cybersecurity compliance and
+          information integrity.
+  - company: "Latin America Sourcing"
+    location: "Remote"
+    role: "Business Analyst"
+    start: "May 2025"
+    end: "July 2025"
+    summary: null
+    bullets:
+      - lead: null
+        text: >-
+          Managed and analyzed commercial data using Airtable and Stripe to optimize negotiation
+          processes with international suppliers.
+      - lead: null
+        text: >-
+          Analyzed client requests, documented commercial interactions, and generated operational
+          insights. Automated supplier classification processes using custom Python scripts.
+  - company: "Industria Licorera de Caldas"
+    location: "Manizales, Colombia"
+    role: "Business Intelligence Internship"
+    start: "Feb 2023"
+    end: "Jul 2023"
+    summary: null
+    bullets:
+      - lead: null
+        text: >-
+          Developed Power BI dashboards for Operations and Foreign Trade departments, integrating
+          data from Dynamics 365 to drive logistics efficiency.
+
+education:
+  - degree: "Bachelor of Business Administration (BBA)"
+    institution: "Universidad Nacional de Colombia"
+    date: "October 2023"
+
+certificates:
+  note: "Full certificates list"
+  link: "https://github.com/PogloLopez/PogloLopez/blob/main/CERTIFICATES.md"
+  link_label: "here"
+  highlights:
+    - title: "Google Data Analytics Professional Certificate"
+      org: "Google | Coursera"
+    - title: "Databases for Data Scientists Specialization"
+      org: "University of Colorado Boulder | Coursera"
+    - title: "Professional Fundamentals of Data Analysis"
+      org: "Microsoft | LinkedIn Learning"
+    - title: "Data Analysis Tools"
+      org: "Wesleyan University | Coursera"
+
+references:
+  - name: "Luisa Soraya Santana Murcia"
+    role: "Mercaldas | Demand Planning Leader"
+    phone: "+57 318 358 9892"
+    email: "ssantana@mercaldas.com.co"
+  - name: "Nicolas Navarro Felizzola"
+    role: "itti | Data Engineer"
+    phone: "+57 317 557 6781"
+    email: "iniconavarro@gmail.com"
+  - name: "Juan Luis López Toro"
+    role: "Mercaldas | Supply Manager"
+    phone: null
+    email: "jlopez@mercaldas.com.co"

@@ -1,0 +1,8 @@
+# Python / uv virtual environments
+.venv/
+__pycache__/
+*.pyc
+
+# OS cruft
+.DS_Store
+Thumbs.db
