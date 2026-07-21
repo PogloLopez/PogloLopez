@@ -66,7 +66,7 @@ te avisa antes de generar el PDF.
 `Segoe UI` → `Arial`.
 
 Bierstadt/Aptos no se "instalan" como fuente del sistema aunque tengas Microsoft 365 — Office las
-descarga como *cloud font* y las cachea en
+descarga como _cloud font_ y las cachea en
 `%LOCALAPPDATA%\Microsoft\FontCache\4\CloudFonts\`, visibles solo para apps de Office, no para el
 resto de programas (Typst incluido). No hace falta instalar nada a mano ni con `uv` (los venvs de
 Python no tienen forma de gestionar fuentes, son una capa completamente distinta al sistema de

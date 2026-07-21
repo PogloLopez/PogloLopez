@@ -76,10 +76,14 @@ def check_parity(es, en, path: str = "") -> list[str]:
         if only_en := keys_en - keys_es:
             warnings.append(f"{path or '<root>'}: claves solo en EN: {sorted(only_en)}")
         for key in keys_es & keys_en:
-            warnings.extend(check_parity(es[key], en[key], f"{path}.{key}" if path else key))
+            warnings.extend(
+                check_parity(es[key], en[key], f"{path}.{key}" if path else key)
+            )
     elif isinstance(es, list) and isinstance(en, list):
         if len(es) != len(en):
-            warnings.append(f"{path}: distinta cantidad de elementos (ES={len(es)}, EN={len(en)})")
+            warnings.append(
+                f"{path}: distinta cantidad de elementos (ES={len(es)}, EN={len(en)})"
+            )
         for i, (e_item, n_item) in enumerate(zip(es, en)):
             warnings.extend(check_parity(e_item, n_item, f"{path}[{i}]"))
 
@@ -124,7 +128,9 @@ def compile_all(typst: str) -> bool:
 def watch_all(typst: str) -> None:
     fonts = font_path_args()
     procs = [
-        subprocess.Popen([typst, "watch", *fonts, entry, str(CV_DIR / output_name)], cwd=BUILDER_DIR)
+        subprocess.Popen(
+            [typst, "watch", *fonts, entry, str(CV_DIR / output_name)], cwd=BUILDER_DIR
+        )
         for entry, _, output_name in LANGUAGES
     ]
     print("Vigilando cambios en ambos idiomas (Ctrl+C para detener)...")
@@ -138,7 +144,9 @@ def watch_all(typst: str) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--watch", action="store_true", help="recompilar en vivo al guardar cambios")
+    parser.add_argument(
+        "--watch", action="store_true", help="recompilar en vivo al guardar cambios"
+    )
     args = parser.parse_args()
 
     typst = find_typst()

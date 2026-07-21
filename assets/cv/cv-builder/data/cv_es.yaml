@@ -1,22 +1,22 @@
 labels:
-  profile: "Perfil"
-  skills: "Habilidades"
-  experience: "Experiencia"
-  education: "Educación"
-  certificates: "Certificados y cursos"
-  references: "Referencias"
+  profile: 'Perfil'
+  skills: 'Habilidades'
+  experience: 'Experiencia'
+  education: 'Educación'
+  certificates: 'Certificados y cursos'
+  references: 'Referencias'
 
-first_name: "Pablo Alejandro"
-last_name: "López Sánchez"
-title: "Analytics Engineer"
-location: "Manizales, Colombia"
-phone: "+57 318 766 2292"
-email: "poglolopez@gmail.com"
+first_name: 'Pablo Alejandro'
+last_name: 'López Sánchez'
+title: 'Analytics Engineer'
+location: 'Manizales, Colombia'
+phone: '+57 318 766 2292'
+email: 'poglolopez@gmail.com'
 links:
-  - label: "LinkedIn"
-    url: "https://linkedin.com/in/pablo-a-lopez-s"
-  - label: "GitHub"
-    url: "https://github.com/PogloLopez"
+  - label: 'LinkedIn'
+    url: 'https://linkedin.com/in/pablo-a-lopez-s'
+  - label: 'GitHub'
+    url: 'https://github.com/PogloLopez'
 
 profile: >-
   Analytics engineer, con enfoque en el diseño e implementación de arquitecturas de datos con
@@ -27,60 +27,60 @@ profile: >-
   escalable.
 
 skills:
-  - category: "Ingeniería de datos"
-    items: "Python (Polars, SQLAlchemy, FastAPI), SQL (SQL Server, PostgreSQL), ETL Pipelines, Web Scraping (Selenium, Scrapy)."
-  - category: "Infraestructura y orquestación"
-    items: "Dagster, Docker, SSH/SFTP, Linux Server, Git/GitHub, modelado de flujos de datos."
-  - category: "Analítica"
-    items: "Power BI (DAX, Power Query), análisis de KPIs."
-  - category: "Estrategia de negocio"
-    items: "Gestión de proyectos, planeación de la demanda, optimización de inventarios."
-  - category: "Idiomas"
-    items: "Inglés (B2-C1), Español (Nativo)."
+  - category: 'Ingeniería de datos'
+    items: 'Python (Polars, SQLAlchemy, FastAPI), SQL (SQL Server, PostgreSQL), ETL Pipelines, Web Scraping (Selenium, Scrapy).'
+  - category: 'Infraestructura y orquestación'
+    items: 'Dagster, Docker, SSH/SFTP, Linux Server, Git/GitHub, modelado de flujos de datos.'
+  - category: 'Analítica'
+    items: 'Power BI (DAX, Power Query), análisis de KPIs.'
+  - category: 'Estrategia de negocio'
+    items: 'Gestión de proyectos, planeación de la demanda, optimización de inventarios.'
+  - category: 'Idiomas'
+    items: 'Inglés (B2-C1), Español (Nativo).'
 
 experience:
-  - company: "Mercaldas"
-    location: "Manizales, Colombia"
-    role: "Analista de Datos | Analytics Engineer"
-    start: "Julio 2025"
-    end: "Actualidad"
+  - company: 'Mercaldas'
+    location: 'Manizales, Colombia'
+    role: 'Analista de Datos | Analytics Engineer'
+    start: 'Julio 2025'
+    end: 'Actualidad'
     summary: >-
       Liderazgo de procesos de modernización técnica de Mercaldas, migrando procesos aislados y
       mecánicos hacia una arquitectura de datos centralizada, automatizada y escalable.
     bullets:
-      - lead: "Infraestructura MLOps & Autonomía de Datos"
+      - lead: 'Infraestructura MLOps & Autonomía de Datos'
         text: >-
           Lideré el diseño e implementación de una arquitectura MLOps completa, para la generación
           autónoma de pronósticos de demanda, mejorando la asertividad de los pronósticos de
           demanda en un *30%*, reduciendo el porcentaje de productos *agotados* (Clase A) en un
           *3%* y eliminando la dependencia de proveedores externos.
-      - lead: "Inteligencia de Suministros (AgTech/Livestock)"
+      - lead: 'Inteligencia de Suministros (AgTech/Livestock)'
         text: >-
           Desarrollo de un sistema de *web scraping* para el monitoreo de precios de animales en
           pie (res, cerdo, pollo) y cortes cárnicos, permitiendo una negociación basada en datos
           para el centro de producción de carnes de la empresa.
-      - lead: "Orquestación Centralizada (Dagster)"
+      - lead: 'Orquestación Centralizada (Dagster)'
         text: >-
           Despliegue y configuración de una plataforma de orquestación en un servidor *Linux*
           dedicado para unificar procesos dispersos; estructurado para automatizar ejecuciones
           manuales y optimizar el monitoreo de fallas, con una reducción estimada de \~4 horas
           semanales de carga operativa por usuario en los equipos de TI y Planeación.
-      - lead: "Gobernanza y DevSecOps"
+      - lead: 'Gobernanza y DevSecOps'
         text: >-
           Establecí el ecosistema de desarrollo empresarial en *GitHub*, implementando reglas de
           código, control de versiones y *flujos de trabajo agénticos* con Claude AI para
           estandarizar la producción de software interno.
-      - lead: "Seguridad de Infraestructura"
+      - lead: 'Seguridad de Infraestructura'
         text: >-
           Diseño técnico de un roadmap de migración de flujos de datos legados (FTP) hacia
           protocolos seguros (*SFTP/SSH*), proyectando la transición de cargas completas diarias
           hacia pipelines de extracción incremental por hora para optimizar la disponibilidad del
           dato, el cumplimiento de estándares de ciberseguridad y la integridad de la información.
-  - company: "Latin America Sourcing"
-    location: "Remoto"
-    role: "Business Analyst"
-    start: "Mayo 2025"
-    end: "Julio 2025"
+  - company: 'Latin America Sourcing'
+    location: 'Remoto'
+    role: 'Business Analyst'
+    start: 'Mayo 2025'
+    end: 'Julio 2025'
     summary: null
     bullets:
       - lead: null
@@ -92,11 +92,11 @@ experience:
           Análisis de solicitudes de clientes; seguimiento y documentación de interacciones
           comerciales en bases de datos; generación de insights operativos; automatización de
           procesos de clasificación de proveedores con scripts en Python.
-  - company: "Industria Licorera de Caldas"
-    location: "Manizales, Colombia"
-    role: "Práctica empresarial en Business Intelligence"
-    start: "Feb 2023"
-    end: "Jul 2023"
+  - company: 'Industria Licorera de Caldas'
+    location: 'Manizales, Colombia'
+    role: 'Práctica empresarial en Business Intelligence'
+    start: 'Feb 2023'
+    end: 'Jul 2023'
     summary: null
     bullets:
       - lead: null
@@ -105,34 +105,34 @@ experience:
           integrando datos desde Dynamics 365.
 
 education:
-  - degree: "Profesional en Administración de Empresas"
-    institution: "Universidad Nacional de Colombia"
-    date: "octubre del 2023"
+  - degree: 'Profesional en Administración de Empresas'
+    institution: 'Universidad Nacional de Colombia'
+    date: 'octubre del 2023'
 
 certificates:
-  note: "Listado completo de certificados"
-  link: "https://github.com/PogloLopez/PogloLopez/blob/main/CERTIFICATES.md"
-  link_label: "aquí"
+  note: 'Listado completo de certificados'
+  link: 'https://github.com/PogloLopez/PogloLopez/blob/main/CERTIFICATES.md'
+  link_label: 'aquí'
   highlights:
-    - title: "Google Data Analytics Professional Certificate"
-      org: "Google | Coursera"
-    - title: "Databases for Data Scientists Specialization"
-      org: "University of Colorado Boulder | Coursera"
-    - title: "Professional Fundamentals of Data Analysis"
-      org: "Microsoft | LinkedIn Learning"
-    - title: "Data Analysis Tools"
-      org: "Wesleyan University | Coursera"
+    - title: 'Google Data Analytics Professional Certificate'
+      org: 'Google | Coursera'
+    - title: 'Databases for Data Scientists Specialization'
+      org: 'University of Colorado Boulder | Coursera'
+    - title: 'Professional Fundamentals of Data Analysis'
+      org: 'Microsoft | LinkedIn Learning'
+    - title: 'Data Analysis Tools'
+      org: 'Wesleyan University | Coursera'
 
 references:
-  - name: "Luisa Soraya Santana Murcia"
-    role: "Mercaldas | Líder Planeación de Demanda"
-    phone: "+57 318 358 9892"
-    email: "ssantana@mercaldas.com.co"
-  - name: "Nicolas Navarro Felizzola"
-    role: "itti | Ingeniero de Datos"
-    phone: "+57 317 557 6781"
-    email: "iniconavarro@gmail.com"
-  - name: "Juan Luis López Toro"
-    role: "Mercaldas | Gerente de Abastecimiento"
+  - name: 'Luisa Soraya Santana Murcia'
+    role: 'Mercaldas | Líder Planeación de Demanda'
+    phone: '+57 318 358 9892'
+    email: 'ssantana@mercaldas.com.co'
+  - name: 'Nicolas Navarro Felizzola'
+    role: 'itti | Ingeniero de Datos'
+    phone: '+57 317 557 6781'
+    email: 'iniconavarro@gmail.com'
+  - name: 'Juan Luis López Toro'
+    role: 'Mercaldas | Gerente de Abastecimiento'
     phone: null
-    email: "jlopez@mercaldas.com.co"
+    email: 'jlopez@mercaldas.com.co'
