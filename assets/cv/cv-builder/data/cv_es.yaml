@@ -8,7 +8,7 @@ labels:
 
 first_name: 'Pablo Alejandro'
 last_name: 'López Sánchez'
-title: 'Analytics Engineer'
+title: 'Data & AI Automation Engineer'
 location: 'Manizales, Colombia'
 phone: '+57 318 766 2292'
 email: 'poglolopez@gmail.com'
@@ -19,7 +19,7 @@ links:
     url: 'https://github.com/PogloLopez'
 
 profile: >-
-  Analytics engineer, con enfoque en el diseño e implementación de arquitecturas de datos con
+  Data & AI Automation Engineer, con enfoque en el diseño e implementación de arquitecturas de datos con
   orquestación centralizada, infraestructura MLOps y pipelines de automatización, que reducen los
   cuellos de botella y optimizan la toma de decisiones estratégicas basadas en datos. Construyendo
   proyectos técnicos de principio a fin, conectando piezas abstractas en sistemas interconectados y
@@ -29,6 +29,8 @@ profile: >-
 skills:
   - category: 'Ingeniería de datos'
     items: 'Python (Polars, SQLAlchemy, FastAPI), SQL (SQL Server, PostgreSQL), ETL Pipelines, Web Scraping (Selenium, Scrapy).'
+  - category: 'IA y sistemas agénticos'
+    items: 'Desarrollo multiagéntico, spec-driven development, harness engineering, MCP (Model Context Protocol), Claude Code / Agent SDK, prompt engineering.'
   - category: 'Infraestructura y orquestación'
     items: 'Dagster, Docker, SSH/SFTP, Linux Server, Git/GitHub, modelado de flujos de datos.'
   - category: 'Analítica'
@@ -41,7 +43,7 @@ skills:
 experience:
   - company: 'Mercaldas'
     location: 'Manizales, Colombia'
-    role: 'Analista de Datos | Analytics Engineer'
+    role: 'Data & AI Automation Engineer'
     start: 'Julio 2025'
     end: 'Actualidad'
     summary: >-
@@ -118,8 +120,8 @@ certificates:
       org: 'Google | Coursera'
     - title: 'Databases for Data Scientists Specialization'
       org: 'University of Colorado Boulder | Coursera'
-    - title: 'Professional Fundamentals of Data Analysis'
-      org: 'Microsoft | LinkedIn Learning'
+    - title: 'Claude Code in Action'
+      org: 'Anthropic Education'
     - title: 'Data Analysis Tools'
       org: 'Wesleyan University | Coursera'
 

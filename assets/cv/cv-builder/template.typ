@@ -13,7 +13,7 @@
 #let clickable(url, body) = underline(text(fill: accent)[#link(url)[#body]])
 
 #let section(title, body) = {
-  block(above: 1.3em, below: 0.6em, breakable: false)[
+  block(above: 1em, below: 0.45em, breakable: false)[
     #text(size: 10.5pt, weight: "bold", tracking: 0.06em, fill: accent)[#upper(title)]
     #v(0.2em)
     #line(length: 100%, stroke: rule-stroke)
@@ -64,11 +64,11 @@
       #md(b.text)
     ],
   )
-  v(0.35em)
+  v(0.28em)
 }
 
 #let experience-entry(data, e) = {
-  block(below: 0.8em, breakable: false)[
+  block(below: 0.65em, breakable: false)[
     #grid(
       columns: (1fr, auto),
       align: (left, right),
@@ -79,10 +79,10 @@
       text(fill: muted, size: 9.5pt)[#e.start -- #e.end],
     )
     #if "summary" in e and e.summary != none [
-      #v(0.25em)
+      #v(0.2em)
       #text(style: "italic", size: 9.5pt)[#e.summary]
     ]
-    #v(0.4em)
+    #v(0.3em)
     #for b in e.bullets {
       bullet-item(b)
     }
@@ -93,7 +93,7 @@
   grid(
     columns: (auto, 1fr),
     column-gutter: 1em,
-    row-gutter: 0.9em,
+    row-gutter: 0.65em,
     align: (left + top, left + top),
     ..data.skills.map(s => (strong[#s.category:], [#s.items])).flatten()
   )
@@ -101,7 +101,7 @@
 
 #let education-block(data) = {
   for e in data.education {
-    block(below: 0.4em)[
+    block(below: 0.3em)[
       #strong[#e.degree] \
       #emph[#e.institution] -- #e.date
     ]
@@ -111,9 +111,9 @@
 #let certificates-block(data) = {
   let c = data.certificates
   [#c.note #clickable(c.link, c.link_label).]
-  v(0.5em)
+  v(0.35em)
   for h in c.highlights {
-    block(below: 0.55em)[
+    block(below: 0.4em)[
       #strong[#h.title] \
       #text(fill: muted, size: 9.5pt)[#h.org]
     ]
@@ -134,9 +134,9 @@
 }
 
 #let render(data) = {
-  set page(paper: "us-letter", margin: (x: 1.9cm, y: 1.7cm))
-  set text(font: ("Bierstadt", "Calibri", "Segoe UI", "Arial"), size: 9.8pt, lang: "en")
-  set par(justify: false, leading: 0.62em)
+  set page(paper: "us-letter", margin: (x: 1.6cm, y: 1.3cm))
+  set text(font: ("Bierstadt", "Calibri", "Segoe UI", "Arial"), size: 9.6pt, lang: "en")
+  set par(justify: false, leading: 0.56em)
 
   header(data)
 

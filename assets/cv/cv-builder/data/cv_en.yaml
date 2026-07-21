@@ -8,7 +8,7 @@ labels:
 
 first_name: 'Pablo Alejandro'
 last_name: 'López Sánchez'
-title: 'Analytics Engineer'
+title: 'Data & AI Automation Engineer'
 location: 'Manizales, Colombia'
 phone: '+57 318 766 2292'
 email: 'poglolopez@gmail.com'
@@ -19,7 +19,7 @@ links:
     url: 'https://github.com/PogloLopez'
 
 profile: >-
-  Analytics Engineer specializing in the design and implementation of data architectures featuring
+  Data & AI Automation Engineer specializing in the design and implementation of data architectures featuring
   centralized orchestration, MLOps infrastructure, and automation pipelines, reducing operational
   bottlenecks and optimizing strategic data-driven decision-making. Proven track record of building
   technical projects end-to-end, connecting abstract components into scalable, interconnected
@@ -29,6 +29,8 @@ profile: >-
 skills:
   - category: 'Data Engineering'
     items: 'Python (Polars, SQLAlchemy, FastAPI), SQL (SQL Server, PostgreSQL), ETL Pipelines, Web Scraping (Selenium, Scrapy).'
+  - category: 'AI & Agentic Systems'
+    items: 'Multi-agent development, spec-driven development, harness engineering, MCP (Model Context Protocol), Claude Code / Agent SDK, prompt engineering.'
   - category: 'Infrastructure & Orchestration'
     items: 'Dagster, Docker, SSH/SFTP, Linux Server, Git/GitHub, Data Flow Modeling.'
   - category: 'Analytics'
@@ -41,7 +43,7 @@ skills:
 experience:
   - company: 'Mercaldas'
     location: 'Manizales, Colombia'
-    role: 'Data Analyst | Analytics Engineer'
+    role: 'Data & AI Automation Engineer'
     start: 'July 2025'
     end: 'Present'
     summary: >-
@@ -117,8 +119,8 @@ certificates:
       org: 'Google | Coursera'
     - title: 'Databases for Data Scientists Specialization'
       org: 'University of Colorado Boulder | Coursera'
-    - title: 'Professional Fundamentals of Data Analysis'
-      org: 'Microsoft | LinkedIn Learning'
+    - title: 'Claude Code in Action'
+      org: 'Anthropic Education'
     - title: 'Data Analysis Tools'
       org: 'Wesleyan University | Coursera'
 

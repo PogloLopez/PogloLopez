@@ -6,7 +6,7 @@
 </div>
 
 <p align="center">
-  I'm an <strong>Analytics Engineer</strong> specializing in the design and implementation of data platforms featuring <strong>centralized orchestration, MLOps infrastructure, and secure automation pipelines</strong>. 
+  I'm a <strong>Data & AI Automation Engineer</strong> specializing in the design and implementation of data platforms featuring <strong>centralized orchestration, MLOps infrastructure, and secure automation pipelines</strong>. 
   I bridge the gap between complex business workflows and high-performance, resilient technical systems that drive measurable strategic impact.
 </p>
 
