@@ -78,6 +78,21 @@ Technical summaries and non-confidential project architecture details can be pro
 ---
 
 <div align="center">
+  <h2>📄 Resume / CV</h2>
+
+  <p>
+    <strong>Download my resume:</strong>
+    <br>
+    <a href="/assets/cv/Pablo-Lopez-CV-EN.pdf">
+      <img src="https://img.shields.io/badge/CV_English-218BFF?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download English CV">
+    </a>
+    <a href="/assets/cv/Pablo-Lopez-CV-ES.pdf">
+      <img src="https://img.shields.io/badge/CV_Espa%C3%B1ol-218BFF?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Descargar CV en Español">
+    </a>
+  </p>
+</div>
+
+<div align="center">
   <h2>📜 Certifications</h2>
   
   <p>

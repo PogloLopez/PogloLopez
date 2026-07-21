@@ -40,7 +40,7 @@ el contenido del CV.
   admite énfasis con la sintaxis nativa de Typst (`*así se pone en negrita*`).
 - **Certificados destacados**: `certificates.highlights`. Reordenar o reemplazar esta lista es la
   forma de destacar certificados distintos; el listado completo sigue viviendo en
-  [`CERTIFICATES.md`](../../CERTIFICATES.md).
+  [`CERTIFICATES.md`](../../../CERTIFICATES.md).
 
 ## Mantener ES y EN sincronizados (con un agente de IA)
 
