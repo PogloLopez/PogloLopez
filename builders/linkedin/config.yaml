@@ -1,0 +1,70 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Banner de LinkedIn — capa de composición (gemelo del header de GH, en espejo).
+#
+# LinkedIn personal = 1584×396 (4:1). La foto de perfil va abajo-IZQUIERDA, así que
+# el texto va a la DERECHA (sobre la zona oscura) y el fondo se voltea en horizontal
+# para dejar el violeta a la izquierda (bajo la foto, sin tapar el texto).
+#
+# Los iconos se reutilizan de builders/header/icons (misma fila del stack). El fondo
+# es el MISMO header.svg que usa el header de GH (builders/header/background/), volteado
+# en espejo — no un asset aparte. Si algún día se quiere un fondo propio para LinkedIn,
+# basta con cambiar `background` a otra ruta.
+# Flujo: editar config.yaml (si hace falta) -> `uv run build.py` -> assets/header/linkedin_banner.png
+# ─────────────────────────────────────────────────────────────────────────────
+
+canvas:
+  width: 1584
+  height: 396
+  ppi: 144                 # 144 → 3168×792 px (2x, nítido)
+
+# Mismo fondo que el header de GH, reutilizado y volteado en espejo (flip_h).
+background: "../header/background/header.svg"
+flip_h: true               # espejo horizontal del fondo (violeta → izquierda)
+output: "../../assets/header/linkedin_banner.png"
+
+# Velo de legibilidad: opaco a la DERECHA (donde va el texto) → transparente a la izquierda.
+scrim:
+  enabled: true
+  color: "#070B14"
+  opacity: 0.72
+  width: 0.58              # fracción DERECHA que cubre el velo
+
+palette:
+  title: "#FFFFFF"
+  subtitle: "#C7CED9"
+  text: "#9BA6B4"
+  accent: "#6C8CFF"
+
+fonts:
+  title: ["Aptos", "Arial"]
+  body: ["Aptos", "Arial"]
+
+content:
+  tagline: "Operational complexity, solved with data & AI."
+  title_lines: ["DATA & AI", "AUTOMATION ENGINEER"]
+  name: "Pablo Alejandro López Sánchez"
+  contact:
+    - "+57 318 766 2292"
+    - "poglolopez@gmail.com"
+
+# Posiciones (px de diseño). El texto se ancla a la DERECHA (margin_r desde el borde).
+layout:
+  margin_r: 80
+  tagline_y: 40
+  tagline_size: 18
+  title_y: 78
+  title_size: 52
+  title_leading: 6
+  title_tracking: -1
+  name_y: 210
+  name_size: 20
+  icons_y: 262
+  contact_y: 330
+  contact_size: 14
+  contact_leading: 5
+
+icons:
+  dir: "../header/icons"   # reutiliza los iconos ya generados del header
+  size: 34
+  gap: 22
+  list: ["python", "claude", "dagster", "docker", "postgresql", "github"]
