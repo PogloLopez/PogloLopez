@@ -6,8 +6,7 @@
 </div>
 
 <p align="center">
-  I'm a <strong>Data & AI Automation Engineer</strong> specializing in the design and implementation of data platforms featuring <strong>centralized orchestration, MLOps infrastructure, and secure automation pipelines</strong>. 
-  I bridge the gap between complex business workflows and high-performance, resilient technical systems that drive measurable strategic impact.
+  I'm a <strong>Data & AI Automation Engineer</strong> specializing in data engineering, automation, and AI systems. I design and implement data architectures, MLOps infrastructure, automation pipelines, and bring AI to the core of operations — connecting extraction, modeling, orchestration, and interface into end-to-end products that turn manual processes into reliable, autonomous workflows.
 </p>
 
 ---
@@ -16,15 +15,17 @@
   <h2>What I do</h2>
 </div>
 
+**MLOps & Automated Forecasting** Design and integration of end-to-end MLOps pipelines for autonomous demand forecasting, reaching 70-82% forecast accuracy by cluster and removing dependencies on legacy third-party ERP architectures.
+
+**Market Price Intelligence** Design and development of an internal analytics platform that forecasts wholesale agricultural product prices 52 weeks ahead using per-cluster ML models, benchmarking the market against internal prices and generating automated AI insights to anticipate purchasing decisions.
+
+**Agentic Development & AI-Assisted Engineering** I build software using AI agents as part of my own engineering practice — spec-driven development, agent harnesses, and iterative loops (Claude Code / Agent SDK) — and bring AI into operational pipelines, such as automated insight generation, to support decision-making.
+
+**Stock-Transfer Planning Automation** Built and shipped a web tool that purchasing analysts use to plan inventory transfers between stores — in production, cutting each transfer plan from hours to minutes and improving stock-reallocation decisions across stores.
+
 **Centralized Orchestration & Infrastructure** Deployment of orchestration platforms (Dagster) on dedicated Linux servers to centralize, monitor, and automate critical corporate workflows, reducing operational overhead and standardizing failure monitoring.
 
-**MLOps & Automated Forecasting** Design and integration of end-to-end MLOps pipelines for autonomous demand forecasting, improving inventory metrics and removing dependencies on legacy third-party ERP architectures.
-
-**Data Engineering & Web Scraping** Development of optimized extraction pipelines using modern libraries (Polars) and robust web scraping systems (Selenium/Scrapy) to inject real-time market intelligence directly into decision-making environments.
-
 **DevSecOps & Governance** Implementation of version control standards, code quality frameworks, and AI-assisted agentic workflows (Claude AI) to standardize internal software development and guarantee code alignment.
-
-**Infrastructure Security & Migration** Restructuring legacy workflows into secure protocols (SFTP/SSH) and transforming full-refresh pipelines into incremental extraction models to optimize performance and information integrity.
 
 ---
 
@@ -45,6 +46,10 @@
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white) ![Scrapy](https://img.shields.io/badge/Scrapy-60A5FA?style=for-the-badge)
 
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white) ![Statsmodels](https://img.shields.io/badge/statsmodels-005C99?style=for-the-badge&logo=python&logoColor=white) ![Scikit Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white) ![Feature Engineering](https://img.shields.io/badge/Feature_Engineering-8B5CF6?style=for-the-badge)
+
+### AI-Assisted Development
+
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white) ![Harness Engineering](https://img.shields.io/badge/Harness_Engineering-F59E0B?style=for-the-badge) ![MCP](https://img.shields.io/badge/MCP-6C8CFF?style=for-the-badge) ![Agentic Workflows](https://img.shields.io/badge/Agentic_Workflows-8B5CF6?style=for-the-badge) ![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-10B981?style=for-the-badge)
 
 ### Infrastructure & Orchestration
 
@@ -74,10 +79,11 @@
 
 While most of my corporate engineering repositories are private, my core achievements focus on building data products end-to-end:
 
-- **Autonomous Demand Forecasting Infrastructure:** Designed an end-to-end MLOps platform that led to a 30% improvement in forecast accuracy and a 3% stockout reduction for high-priority SKUs.
+- **Autonomous Demand Forecasting Infrastructure:** Designed an end-to-end MLOps platform reaching 70-82% forecast accuracy depending on the cluster, contributing decisively to reducing stockouts from a historical 12-20% range to around 8% for high-priority SKUs.
+- **Market Price Intelligence Platform:** Built an internal analytics platform forecasting wholesale agricultural product prices 52 weeks ahead with per-cluster ML models (XGBoost/LightGBM) and automated AI-generated insights, benchmarking the market against internal prices.
+- **Stock-Transfer Planning Automation:** Built and shipped a web tool that purchasing analysts use to plan inventory transfers between stores, cutting each transfer plan from hours to minutes and improving stock-reallocation decisions.
 - **Centralized Linux Orchestration Server:** Migrated dispersed, manual tracking tasks into a single Dagster instance, automating job control and recovery while optimization saved approximately 4 operational hours weekly per user.
-- **AgTech Supply Chain Scraping Engines:** Built automated data-harvesting pipelines using Selenium and Scrapy to extract complex market pricing structures for immediate strategic raw material negotiation.
-- **DevSecOps & Secure Pipelines Architecture:** Standardized development repositories via GitHub using agentic LLM coding assistant workflows, alongside drafting infrastructure migrations from FTP legacy models to incremental SSH/SFTP environments.
+- **Governance & Agentic DevSecOps:** Standardized development repositories via GitHub, implementing agentic coding workflows with Claude Code / Agent SDK to guarantee code alignment and consistent internal software production.
 
 Technical summaries and non-confidential project architecture details can be provided upon request.
 
