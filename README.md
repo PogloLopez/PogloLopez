@@ -1,4 +1,4 @@
-![Header](/assets/readme_header.gif)
+![Header](/assets/header/readme_header.png)
 
 <div align="center">
   <h1>Hi, I'm Pablo López</h1>
@@ -35,9 +35,11 @@
 <div align="center">
 
 ### Programming & Querying
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![SQL](https://img.shields.io/badge/sql-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ### Data Engineering
+
 ![Polars](https://img.shields.io/badge/Polars-30679A?style=for-the-badge) ![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white) ![Scrapy](https://img.shields.io/badge/Scrapy-60A5FA?style=for-the-badge)
@@ -45,16 +47,20 @@
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white) ![Statsmodels](https://img.shields.io/badge/statsmodels-005C99?style=for-the-badge&logo=python&logoColor=white) ![Scikit Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white) ![Feature Engineering](https://img.shields.io/badge/Feature_Engineering-8B5CF6?style=for-the-badge)
 
 ### Infrastructure & Orchestration
+
 ![Dagster](https://img.shields.io/badge/Dagster-251439?style=for-the-badge) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Linux Server](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![SSH/SFTP](https://img.shields.io/badge/SSH_/_SFTP-22C55E?style=for-the-badge)
 
 ### Databases & Storage
+
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Data Warehouse](https://img.shields.io/badge/Data_Warehouse-374151?style=for-the-badge)
 
 ### Business Intelligence & Analytics
+
 ![Power BI](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black) ![DAX](https://img.shields.io/badge/DAX-009EDC?style=for-the-badge&logo=powerbi&logoColor=white) ![Power Query](https://img.shields.io/badge/Power_Query-EE4C2C?style=for-the-badge&logo=powerbi&logoColor=white)
 
 ### Development Workflow & DevSecOps
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
+
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 ![VS Code](https://img.shields.io/badge/vscode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Cursor](https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white) ![Google Antigravity](https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
@@ -68,10 +74,10 @@
 
 While most of my corporate engineering repositories are private, my core achievements focus on building data products end-to-end:
 
-* **Autonomous Demand Forecasting Infrastructure:** Designed an end-to-end MLOps platform that led to a 30% improvement in forecast accuracy and a 3% stockout reduction for high-priority SKUs.
-* **Centralized Linux Orchestration Server:** Migrated dispersed, manual tracking tasks into a single Dagster instance, automating job control and recovery while optimization saved approximately 4 operational hours weekly per user.
-* **AgTech Supply Chain Scraping Engines:** Built automated data-harvesting pipelines using Selenium and Scrapy to extract complex market pricing structures for immediate strategic raw material negotiation.
-* **DevSecOps & Secure Pipelines Architecture:** Standardized development repositories via GitHub using agentic LLM coding assistant workflows, alongside drafting infrastructure migrations from FTP legacy models to incremental SSH/SFTP environments.
+- **Autonomous Demand Forecasting Infrastructure:** Designed an end-to-end MLOps platform that led to a 30% improvement in forecast accuracy and a 3% stockout reduction for high-priority SKUs.
+- **Centralized Linux Orchestration Server:** Migrated dispersed, manual tracking tasks into a single Dagster instance, automating job control and recovery while optimization saved approximately 4 operational hours weekly per user.
+- **AgTech Supply Chain Scraping Engines:** Built automated data-harvesting pipelines using Selenium and Scrapy to extract complex market pricing structures for immediate strategic raw material negotiation.
+- **DevSecOps & Secure Pipelines Architecture:** Standardized development repositories via GitHub using agentic LLM coding assistant workflows, alongside drafting infrastructure migrations from FTP legacy models to incremental SSH/SFTP environments.
 
 Technical summaries and non-confidential project architecture details can be provided upon request.
 

@@ -1,0 +1,72 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Header del README — capa de composición.
+#
+# El HEADER = un FONDO (imagen, generada aparte por una IA especialista) + esta
+# capa de elementos (texto, iconos, datos) montada encima con Typst.
+#
+# Este archivo es la ÚNICA fuente de verdad del contenido y del estilo. Para
+# cambiar textos, colores, posiciones, iconos o el fondo, se edita AQUÍ.
+# Flujo:  1) editar config.yaml   2) `uv run sync_icons.py` (si cambian iconos)
+#         3) `uv run build.py`    → escribe assets/header/readme_header.png
+# ─────────────────────────────────────────────────────────────────────────────
+
+canvas:
+  width: 1280        # unidades de diseño (equivalen a px). Relación 2:1.
+  height: 640
+  ppi: 144           # resolución de salida (144 → 2560×1280 px, nítido en retina)
+
+# Fondo: reemplazar por la imagen real (png/jpg/svg). Ruta relativa a este builder.
+background: "background/header.svg"
+output: "../../assets/header/readme_header.png"
+
+# Velo oscuro para garantizar legibilidad del texto sobre CUALQUIER fondo:
+# opaco a la izquierda (donde va el texto) → transparente a la derecha.
+scrim:
+  enabled: true
+  color: "#070B14"
+  opacity: 0.74      # 0 = sin velo · 1 = totalmente opaco en el borde izquierdo
+  width: 0.60        # fracción del ancho sobre la que se desvanece
+
+palette:
+  title: "#FFFFFF"
+  subtitle: "#C7CED9"
+  text: "#9BA6B4"
+  accent: "#6C8CFF"
+
+fonts:
+  title: ["Aptos", "Arial"]
+  body: ["Aptos", "Arial"]
+
+content:
+  tagline: "Operational complexity, solved with data & AI."
+  title_lines: ["DATA & AI", "AUTOMATION ENGINEER"]
+  name: "Pablo Alejandro López Sánchez"
+  contact:
+    - "+57 318 766 2292"
+    - "poglolopez@gmail.com"
+
+# Posiciones en unidades de diseño (px) desde la esquina superior izquierda.
+layout:
+  margin_x: 74
+  tagline_y: 76
+  title_y: 150
+  title_size: 82
+  title_leading: 10
+  title_tracking: -2      # kerning del título (negativo = más junto)
+  name_y: 360
+  name_size: 27
+  tagline_size: 21
+  icons_y: 452
+  contact_y: 556
+  contact_size: 16
+  contact_leading: 6
+
+icons:
+  color: "#EDEFF2"        # color monocromo · usar "brand" para colores de marca
+  keep_brand: []          # iconos que conservan su color de marca (vacío = todos monocromos)
+  size: 42                # alto de cada icono (px de diseño)
+  gap: 28                 # separación entre iconos
+  # Orden de izquierda a derecha. Nombres = archivo en icons/<nombre>.svg.
+  # python/docker/postgresql/github → simpleicons. claude/dagster → SVG oficial
+  # en icons/_src/ (recoloreado). Cambiar esta lista basta para añadir/quitar.
+  list: ["python", "claude", "dagster", "docker", "postgresql", "github"]

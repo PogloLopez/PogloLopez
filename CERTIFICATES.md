@@ -12,7 +12,7 @@ Welcome! Below is a categorized list of my certifications, primarily obtained th
 **Institution:** Google | Coursera  
 
 **Credly Credential:**  
-[<img src="/assets/credly_badge.png" width="100" alt="Badge">](https://www.credly.com/badges/69e73f74-d1ee-4aed-94b2-cf68d952c0e3/public_url)
+[<img src="/assets/img/credly_badge.png" width="100" alt="Badge">](https://www.credly.com/badges/69e73f74-d1ee-4aed-94b2-cf68d952c0e3/public_url)
 
 Focus: Data analytics foundations, data wrangling, visualization, and stakeholder communication.  
 - ✅ [Foundations: Data, Data, Everywhere](https://www.coursera.org/account/accomplishments/verify/3ZBP819GDXK9) – Data lifecycle, data-driven decision making, and analytical thinking  

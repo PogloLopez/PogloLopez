@@ -1,18 +1,18 @@
 # CV builder
 
 Genera los PDF del CV (español e inglés) a partir de texto plano (YAML) + [Typst](https://typst.app),
-en vez de editar `.docx` a mano. El resultado (`Pablo-Lopez-CV-ES.pdf` / `-EN.pdf`) se publica un nivel
-arriba, en `assets/cv/`.
+en vez de editar `.docx` a mano. El resultado (`Pablo-Lopez-CV-ES.pdf` / `-EN.pdf`) se publica en la
+carpeta de productos del repo, `assets/cv/`.
 
 ## Requisitos (una sola vez)
 
 - [Typst](https://typst.app) instalado y accesible (`winget install --id Typst.Typst`).
 - [uv](https://docs.astral.sh/uv/) instalado (gestiona el entorno Python de este build, aislado en
-  `cv-builder/.venv/` — no toca nada fuera de esta carpeta).
+  `builders/cv/.venv/` — no toca nada fuera de esta carpeta).
 
 ## Uso día a día
 
-Desde esta carpeta (`assets/cv/cv-builder/`):
+Desde esta carpeta (`builders/cv/`):
 
 ```
 uv run build.py
@@ -40,7 +40,7 @@ el contenido del CV.
   admite énfasis con la sintaxis nativa de Typst (`*así se pone en negrita*`).
 - **Certificados destacados**: `certificates.highlights`. Reordenar o reemplazar esta lista es la
   forma de destacar certificados distintos; el listado completo sigue viviendo en
-  [`CERTIFICATES.md`](../../../CERTIFICATES.md).
+  [`CERTIFICATES.md`](../../CERTIFICATES.md).
 
 ## Mantener ES y EN sincronizados (con un agente de IA)
 
@@ -52,7 +52,7 @@ Flujo recomendado:
 
 1. Editar y compilar un solo idioma (ej. `cv_es.yaml`), revisar el PDF, hacer commit.
 2. Abrir una sesión de Claude Code (u otro agente) y pedir algo como:
-   > Revisa el último cambio de git en `assets/cv/cv-builder/data/cv_es.yaml` y replícalo,
+   > Revisa el último cambio de git en `builders/cv/data/cv_es.yaml` y replícalo,
    > traducido, en `cv_en.yaml`, manteniendo el mismo orden de claves y bullets.
 3. Correr `uv run build.py` de nuevo y revisar que ambos PDFs quedaron equivalentes.
 
@@ -82,4 +82,4 @@ sí aplica lo de siempre: instalarla a nivel de sistema operativo (no hay atajo 
 
 ## Respaldo del CV anterior
 
-Los `.docx`/`.pdf` originales (hechos a mano en Word) quedaron en `assets/cv/legacy/` como respaldo.
+Los `.docx`/`.pdf` originales (hechos a mano en Word) quedaron en `builders/cv/legacy/` como respaldo.

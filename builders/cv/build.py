@@ -16,7 +16,8 @@ from pathlib import Path
 import yaml
 
 BUILDER_DIR = Path(__file__).resolve().parent
-CV_DIR = BUILDER_DIR.parent
+# Los PDF finales se publican en <repo>/assets/cv/ (builders/cv → repo raíz → assets/cv).
+CV_DIR = BUILDER_DIR.parents[1] / "assets" / "cv"
 DATA_DIR = BUILDER_DIR / "data"
 
 # (entry .typ, datos yaml, nombre de salida del PDF)
