@@ -74,3 +74,7 @@ Focus: Statistical analysis, visualization, and analytical storytelling.
 - ✅ **How to Speak Well in Public**  
   [Universitat Autònoma de Barcelona | Coursera – Oct. 2024](https://www.coursera.org/account/accomplishments/records/2EPO8W8CKXWU)  
   *Skills: Public speaking techniques, non-verbal communication, and speech structure.*
+
+- ✅ **Fundamentos de Matemáticas**  
+  [Platzi – Jul. 2026](https://platzi.com/p/poglolopez/curso/12164-fundamentos-matematicas/diploma/detalle/)  
+  *Skills: Basic algebra, arithmetic operations, and mathematical reasoning foundations.*
