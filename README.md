@@ -6,7 +6,7 @@
 </div>
 
 <p align="center">
-  I'm a <strong>Data & AI Automation Engineer</strong> specializing in data engineering, automation, and AI systems. I design and implement data architectures, MLOps infrastructure, automation pipelines, and bring AI to the core of operations — connecting extraction, modeling, orchestration, and interface into end-to-end products that turn manual processes into reliable, autonomous workflows.
+  I'm a <strong>Data Engineer</strong> specializing in automation and AI systems. I design and implement data architectures, MLOps infrastructure, automation pipelines, and bring AI to the core of operations — connecting extraction, modeling, orchestration, and interface into end-to-end products that turn manual processes into reliable, autonomous workflows.
 </p>
 
 ---

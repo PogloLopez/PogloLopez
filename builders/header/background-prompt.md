@@ -13,7 +13,7 @@ technology professionals. You produce hero imagery with the restraint and polish
 best modern SaaS brands.
 
 OBJECTIVE
-Create a hero-banner BACKGROUND for the GitHub profile of a Data & AI Automation Engineer.
+Create a hero-banner BACKGROUND for the GitHub profile of a Data Engineer working in AI and automation.
 This is a BACKGROUND ONLY: a large title, a name, a small row of icons and contact details
 will be composited on top afterwards. Therefore the image must contain no text and no logos,
 and must leave calm, uncluttered space for that overlay. The visual concept is entirely
