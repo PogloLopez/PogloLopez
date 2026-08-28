@@ -10,14 +10,16 @@ Dos raíces claras: `assets/` = **productos finales** (lo que muestra el perfil)
 
 - `README.md` — bio/perfil de GitHub. Incrusta el banner `assets/header/readme_header.png`.
 - `CERTIFICATES.md` — listado completo de certificados, enlazado desde `README.md`.
-- `TODO.md` — pendientes activos. Revisar antes de asumir que algo ya está hecho.
 - `assets/`
   - `assets/cv/` — CV en PDF (ES/EN), generado.
   - `assets/header/` — banner(s) del README en PNG, generados.
   - `assets/img/` — imágenes sueltas usadas por los `.md` (p. ej. `credly_badge.png`).
 - `builders/`
   - `builders/cv/` — pipeline del CV (Typst + YAML). Ver `builders/cv/README.md`.
-  - `builders/header/` — pipeline del banner (Typst + fondo). Ver `builders/header/README.md`.
+  - `builders/header/` — pipeline del banner del README (Typst + fondo). Ver
+    `builders/header/README.md`.
+  - `builders/linkedin/` — gemelo del anterior para el banner de LinkedIn (1584×396, texto a
+    la derecha, mismo fondo en espejo). Reutiliza los iconos de `builders/header/icons/`.
   - `builders/cv/legacy/` — CVs viejos en Word, solo respaldo, no editar.
 
 ## CV (Typst + YAML)

@@ -8,7 +8,7 @@ labels:
 
 first_name: 'Pablo Alejandro'
 last_name: 'López Sánchez'
-title: 'Data & AI Automation Engineer'
+title: 'Data Engineer · IA y Automatización'
 location: 'Manizales, Colombia'
 phone: '+57 318 766 2292'
 email: 'poglolopez@gmail.com'
@@ -19,7 +19,7 @@ links:
     url: 'https://github.com/PogloLopez'
 
 profile: >-
-  Data & AI Automation Engineer especializado en ingeniería de datos, automatización y sistemas de IA.
+  Data Engineer especializado en automatización y sistemas de IA.
   Diseño e implemento arquitecturas de datos, infraestructura MLOps y pipelines de automatización, y
   llevo la IA al núcleo de la operación mediante sistemas agénticos y modelos que convierten procesos
   manuales en flujos autónomos. Construyo
@@ -44,7 +44,7 @@ skills:
 experience:
   - company: 'Mercaldas'
     location: 'Manizales, Colombia'
-    role: 'Data & AI Automation Engineer'
+    role: 'Data Engineer'
     start: 'Julio 2025'
     end: 'Actualidad'
     summary: >-
