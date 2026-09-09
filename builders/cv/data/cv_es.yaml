@@ -4,6 +4,7 @@ labels:
   experience: 'Experiencia'
   education: 'Educación'
   certificates: 'Certificados y cursos'
+  projects: 'Proyectos'
   references: 'Referencias'
 
 first_name: 'Pablo Alejandro'
@@ -13,6 +14,8 @@ location: 'Manizales, Colombia'
 phone: '+57 318 766 2292'
 email: 'poglolopez@gmail.com'
 links:
+  - label: 'Portafolio'
+    url: 'https://pablo.maieutik-data.com'
   - label: 'LinkedIn'
     url: 'https://linkedin.com/in/pablo-a-lopez-s'
   - label: 'GitHub'
@@ -110,6 +113,33 @@ experience:
         text: >-
           Desarrollo de dashboards en Power BI para el área de Operaciones y Comercio exterior,
           integrando datos desde Dynamics 365.
+
+projects:
+  note: >-
+    Cinco sistemas en producción, cada uno con una demo interactiva:
+  link: 'https://pablo.maieutik-data.com'
+  link_label: 'pablo.maieutik-data.com'
+  items:
+    - name: 'Pronóstico de demanda con ML'
+      text: >-
+        Pronóstico semanal para más de 100.000 combinaciones de producto y tienda en 14 tiendas,
+        alimentando el reabastecimiento. 19% menos error que el sistema que reemplazó.
+    - name: 'Inteligencia de precios de mercado'
+      text: >-
+        Ingesta los boletines semanales de precios mayoristas del DANE, pronostica 52 semanas por
+        producto y hace que un modelo escriba la lectura de cada serie.
+    - name: 'Asistente de IA sobre datos de negocio'
+      text: >-
+        Asistente en Telegram que responde preguntas de negocio en lenguaje natural, donde cada
+        cifra sale de una consulta real contra la bodega de datos.
+    - name: 'Plataforma interna de operaciones'
+      text: >-
+        API central para el trabajo operativo recurrente. Planear un traslado pasó de unas 4 horas
+        a 2-5 minutos, y lo corre el propio equipo.
+    - name: 'Sistema operativo personal de IA'
+      text: >-
+        Proyecto personal. Un vault Markdown versionado en Git como memoria de largo plazo, con un
+        runtime multiagente que pregunta antes de cualquier acción irreversible.
 
 education:
   - degree: 'Profesional en Administración de Empresas'

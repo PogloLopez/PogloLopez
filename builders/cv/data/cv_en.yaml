@@ -4,6 +4,7 @@ labels:
   experience: 'Experience'
   education: 'Education'
   certificates: 'Certificates & Courses'
+  projects: 'Projects'
   references: 'References'
 
 first_name: 'Pablo Alejandro'
@@ -13,6 +14,8 @@ location: 'Manizales, Colombia'
 phone: '+57 318 766 2292'
 email: 'poglolopez@gmail.com'
 links:
+  - label: 'Portfolio'
+    url: 'https://pablo.maieutik-data.com'
   - label: 'LinkedIn'
     url: 'https://linkedin.com/in/pablo-a-lopez-s'
   - label: 'GitHub'
@@ -106,6 +109,33 @@ experience:
         text: >-
           Developed Power BI dashboards for Operations and Foreign Trade departments, integrating
           data from Dynamics 365 to drive logistics efficiency.
+
+projects:
+  note: >-
+    Five production systems, each with an interactive walkthrough:
+  link: 'https://pablo.maieutik-data.com'
+  link_label: 'pablo.maieutik-data.com'
+  items:
+    - name: 'ML demand forecasting'
+      text: >-
+        Weekly forecasts for 100,000+ product and store combinations across 14 stores, feeding
+        replenishment. 19% lower error than the system it replaced.
+    - name: 'Market price intelligence'
+      text: >-
+        Ingests Colombia's weekly wholesale price bulletins, forecasts 52 weeks per product, and
+        has a model write the reading of each series.
+    - name: 'AI assistant for business data'
+      text: >-
+        Telegram assistant answering business questions in plain language, with every figure
+        traced back to a real query against the warehouse.
+    - name: 'Internal operations platform'
+      text: >-
+        Central API for recurring operations work. Transfer planning went from roughly 4 hours to
+        2-5 minutes, run by the team itself.
+    - name: 'Personal AI operating system'
+      text: >-
+        Personal project. A Git-versioned Markdown vault as long-term memory, with a multi-agent
+        runtime that asks before anything it cannot undo.
 
 education:
   - degree: 'Bachelor of Business Administration (BBA)'

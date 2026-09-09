@@ -108,6 +108,18 @@
   }
 }
 
+#let projects-block(data) = {
+  let p = data.projects
+  [#p.note #clickable(p.link, p.link_label).]
+  v(0.35em)
+  for it in p.items {
+    block(below: 0.55em)[
+      #strong[#it.name] #text(fill: muted)[· #it.text]
+    ]
+  }
+  v(0.1em)
+}
+
 #let certificates-block(data) = {
   let c = data.certificates
   [#c.note #clickable(c.link, c.link_label).]
@@ -147,6 +159,7 @@
       experience-entry(data, e)
     }
   })
+  section(data.labels.projects, projects-block(data))
   section(data.labels.education, education-block(data))
   section(data.labels.certificates, certificates-block(data))
   section(data.labels.references, references-block(data))
