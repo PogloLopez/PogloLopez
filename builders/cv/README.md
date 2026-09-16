@@ -1,8 +1,17 @@
 # CV builder
 
 Genera los PDF del CV (español e inglés) a partir de texto plano (YAML) + [Typst](https://typst.app),
-en vez de editar `.docx` a mano. El resultado (`Pablo-Lopez-CV-ES.pdf` / `-EN.pdf`) se publica en la
-carpeta de productos del repo, `assets/cv/`.
+en vez de editar `.docx` a mano. Cada corrida produce dos variantes por idioma, ambas con **el mismo
+contenido** (mismo YAML) pero distinto layout:
+
+- **Visual** (`Pablo-Lopez-CV-{ES,EN}.pdf`) — el diseño con color y grid pensado para que lo lea una
+  persona.
+- **ATS** (`Pablo-Lopez-CV-{ES,EN}-ATS.pdf`) — una columna, sin grids de layout ni iconos, fuente
+  estándar (Arial), un solo color de acento en headings/enlaces/divisores (el color no afecta el
+  parseo, solo columnas/tablas/iconos lo hacen), pensado para maximizar la fidelidad de extracción de
+  texto de los parsers de sistemas de seguimiento de candidatos (ATS).
+
+Todo se publica en la carpeta de productos del repo, `assets/cv/`.
 
 ## Requisitos (una sola vez)
 
@@ -32,15 +41,27 @@ uv run build.py --watch
 
 ## Qué editar
 
-Todo el contenido vive en `data/cv_es.yaml` y `data/cv_en.yaml`. `template.typ` es puramente
-estructural — no contiene ningún texto de idioma, así que nunca hace falta tocarlo para actualizar
-el contenido del CV.
+Todo el contenido vive en `data/cv_es.yaml` y `data/cv_en.yaml`. `template.typ` (versión visual) y
+`template_ats.typ` (versión ATS) son puramente estructurales — no contienen ningún texto de idioma,
+así que nunca hace falta tocarlos para actualizar el contenido del CV.
 
 - **Bullets de la experiencia actual**: `experience[0].bullets` en cada YAML. El campo `text`
   admite énfasis con la sintaxis nativa de Typst (`*así se pone en negrita*`).
 - **Certificados destacados**: `certificates.highlights`. Reordenar o reemplazar esta lista es la
   forma de destacar certificados distintos; el listado completo sigue viviendo en
   [`CERTIFICATES.md`](../../CERTIFICATES.md).
+
+## CV ATS
+
+El PDF ATS (`Pablo-Lopez-CV-{ES,EN}-ATS.pdf`) reutiliza el mismo contenido del CV visual, solo
+cambia el layout: una columna (los ATS pueden leer el texto en el orden equivocado si el layout usa
+columnas/tablas para maquetar), sin iconos, con encabezados de sección en texto plano y viñetas
+simples en vez de layout tabular.
+
+Para adaptar las keywords de una postulación puntual, ver la skill `tailor-keywords`
+(`.claude/skills/tailor-keywords/`): en vez de listarlas aparte, las teje dentro de la narrativa que
+ya existe en `cv_es.yaml`/`cv_en.yaml` (bullets, skills, proyectos), sustituyendo términos genéricos
+por la terminología exacta de la oferta cuando describen lo mismo.
 
 ## Mantener ES y EN sincronizados (con un agente de IA)
 

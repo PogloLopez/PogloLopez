@@ -24,6 +24,8 @@ DATA_DIR = BUILDER_DIR / "data"
 LANGUAGES = [
     ("cv_es.typ", "cv_es.yaml", "Pablo-Lopez-CV-ES.pdf"),
     ("cv_en.typ", "cv_en.yaml", "Pablo-Lopez-CV-EN.pdf"),
+    ("cv_es_ats.typ", "cv_es.yaml", "Pablo-Lopez-CV-ES-ATS.pdf"),
+    ("cv_en_ats.typ", "cv_en.yaml", "Pablo-Lopez-CV-EN-ATS.pdf"),
 ]
 
 
