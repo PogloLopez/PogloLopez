@@ -1,2 +1,2 @@
 #import "template.typ": render
-#render(yaml("data/cv_en.yaml"))
+#render(yaml(sys.inputs.at("data", default: "data/cv_en.yaml")))

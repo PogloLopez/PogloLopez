@@ -58,10 +58,18 @@ cambia el layout: una columna (los ATS pueden leer el texto en el orden equivoca
 columnas/tablas para maquetar), sin iconos, con encabezados de sección en texto plano y viñetas
 simples en vez de layout tabular.
 
-Para adaptar las keywords de una postulación puntual, ver la skill `tailor-keywords`
-(`.claude/skills/tailor-keywords/`): en vez de listarlas aparte, las teje dentro de la narrativa que
-ya existe en `cv_es.yaml`/`cv_en.yaml` (bullets, skills, proyectos), sustituyendo términos genéricos
-por la terminología exacta de la oferta cuando describen lo mismo.
+## CV adaptado a una postulación puntual
+
+`uv run build.py --application <slug>` compila los mismos 4 PDFs (ES/EN × visual/ATS) pero a partir
+de una copia propia del contenido en `builders/cv/applications/<slug>/data/` (bootstrapeada desde
+`data/cv_{es,en}.yaml` la primera vez que se usa ese slug), y los escribe en
+`builders/cv/applications/<slug>/` en vez de `assets/cv/`.
+
+Esa carpeta (`builders/cv/applications/`) está en `.gitignore` — nunca se versiona ni se publica.
+Sirve para reformular la narrativa del CV con la terminología exacta de una oferta puntual (ver la
+skill `tailor-keywords`, `.claude/skills/tailor-keywords/`) sin tocar el CV canónico que alimenta el
+perfil público de GitHub. Editar `applications/<slug>/data/cv_es.yaml` y `cv_en.yaml` directamente y
+volver a correr el mismo comando para recompilar.
 
 ## Mantener ES y EN sincronizados (con un agente de IA)
 
