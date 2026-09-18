@@ -6,3 +6,7 @@ __pycache__/
 # OS cruft
 .DS_Store
 Thumbs.db
+
+# CV builds tailored to a specific job posting -- not the canonical profile,
+# never published to assets/cv/. See builders/cv/README.md.
+builders/cv/applications/

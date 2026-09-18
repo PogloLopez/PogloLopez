@@ -1,8 +1,11 @@
 """Compila el CV (ES/EN) de YAML+Typst a PDF.
 
 Uso:
-    uv run build.py            # compila ambos idiomas una vez
-    uv run build.py --watch    # recompila en vivo mientras se edita (Ctrl+C para salir)
+    uv run build.py                                 # compila el CV canónico (ambos idiomas, visual + ATS)
+    uv run build.py --watch                          # recompila en vivo mientras se edita (Ctrl+C para salir)
+    uv run build.py --application loka-ml-engineer   # compila una versión adaptada a UNA postulación
+                                                      # puntual, en builders/cv/applications/<slug>/ --
+                                                      # no versionado, no toca el CV canónico
 """
 
 from __future__ import annotations
@@ -19,11 +22,16 @@ BUILDER_DIR = Path(__file__).resolve().parent
 # Los PDF finales se publican en <repo>/assets/cv/ (builders/cv → repo raíz → assets/cv).
 CV_DIR = BUILDER_DIR.parents[1] / "assets" / "cv"
 DATA_DIR = BUILDER_DIR / "data"
+# Postulaciones puntuales: cada una vive en su propia subcarpeta, ignorada por
+# git (ver .gitignore). Nunca se publican en assets/cv/ ni se versionan.
+APPLICATIONS_DIR = BUILDER_DIR / "applications"
 
-# (entry .typ, datos yaml, nombre de salida del PDF)
+# (entry .typ, nombre del yaml de datos, nombre de salida del PDF)
 LANGUAGES = [
     ("cv_es.typ", "cv_es.yaml", "Pablo-Lopez-CV-ES.pdf"),
     ("cv_en.typ", "cv_en.yaml", "Pablo-Lopez-CV-EN.pdf"),
+    ("cv_es_ats.typ", "cv_es.yaml", "Pablo-Lopez-CV-ES-ATS.pdf"),
+    ("cv_en_ats.typ", "cv_en.yaml", "Pablo-Lopez-CV-EN-ATS.pdf"),
 ]
 
 
@@ -59,6 +67,18 @@ def font_path_args() -> list[str]:
     return []
 
 
+def bootstrap_application_data(data_dir: Path) -> None:
+    """Primera vez que se compila una postulación: copia el YAML canónico como
+    punto de partida editable. Nunca sobreescribe un archivo que ya exista, para
+    no perder ediciones tailored de una corrida anterior."""
+    data_dir.mkdir(parents=True, exist_ok=True)
+    for name in ("cv_es.yaml", "cv_en.yaml"):
+        dest = data_dir / name
+        if not dest.exists():
+            shutil.copyfile(DATA_DIR / name, dest)
+            print(f"  bootstrap: copiado {name} desde data/ canónico")
+
+
 def check_parity(es, en, path: str = "") -> list[str]:
     """Compara recursivamente la forma (claves/longitudes) de cv_es.yaml y cv_en.yaml.
 
@@ -91,10 +111,10 @@ def check_parity(es, en, path: str = "") -> list[str]:
     return warnings
 
 
-def run_parity_check() -> None:
-    with open(DATA_DIR / "cv_es.yaml", encoding="utf-8") as f:
+def run_parity_check(data_dir: Path) -> None:
+    with open(data_dir / "cv_es.yaml", encoding="utf-8") as f:
         es = yaml.safe_load(f)
-    with open(DATA_DIR / "cv_en.yaml", encoding="utf-8") as f:
+    with open(data_dir / "cv_en.yaml", encoding="utf-8") as f:
         en = yaml.safe_load(f)
 
     warnings = check_parity(es, en)
@@ -107,32 +127,45 @@ def run_parity_check() -> None:
         print("cv_es.yaml y cv_en.yaml tienen la misma estructura. OK.\n")
 
 
-def compile_all(typst: str) -> bool:
+def compile_all(typst: str, data_dir: Path, output_dir: Path) -> bool:
     fonts = font_path_args()
+    output_dir.mkdir(parents=True, exist_ok=True)
     ok = True
-    for entry, _, output_name in LANGUAGES:
-        output_path = CV_DIR / output_name
+    for entry, data_name, output_name in LANGUAGES:
+        output_path = output_dir / output_name
+        data_arg = (data_dir / data_name).relative_to(BUILDER_DIR).as_posix()
         result = subprocess.run(
-            [typst, "compile", *fonts, entry, str(output_path)],
+            [typst, "compile", *fonts, "--input", f"data={data_arg}", entry, str(output_path)],
             cwd=BUILDER_DIR,
             capture_output=True,
             text=True,
         )
         if result.returncode == 0:
-            print(f"OK  {entry} -> assets/cv/{output_name}")
+            rel = output_path.relative_to(BUILDER_DIR.parents[1])
+            print(f"OK  {entry} -> {rel.as_posix()}")
         else:
             ok = False
             print(f"ERROR compilando {entry}:\n{result.stderr}", file=sys.stderr)
     return ok
 
 
-def watch_all(typst: str) -> None:
+def watch_all(typst: str, data_dir: Path, output_dir: Path) -> None:
     fonts = font_path_args()
+    output_dir.mkdir(parents=True, exist_ok=True)
     procs = [
         subprocess.Popen(
-            [typst, "watch", *fonts, entry, str(CV_DIR / output_name)], cwd=BUILDER_DIR
+            [
+                typst,
+                "watch",
+                *fonts,
+                "--input",
+                f"data={(data_dir / data_name).relative_to(BUILDER_DIR).as_posix()}",
+                entry,
+                str(output_dir / output_name),
+            ],
+            cwd=BUILDER_DIR,
         )
-        for entry, _, output_name in LANGUAGES
+        for entry, data_name, output_name in LANGUAGES
     ]
     print("Vigilando cambios en ambos idiomas (Ctrl+C para detener)...")
     try:
@@ -144,19 +177,42 @@ def watch_all(typst: str) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     parser.add_argument(
         "--watch", action="store_true", help="recompilar en vivo al guardar cambios"
+    )
+    parser.add_argument(
+        "--application",
+        metavar="SLUG",
+        help=(
+            "compila una versión adaptada a una postulación puntual "
+            "(builders/cv/applications/SLUG/), en vez del CV canónico"
+        ),
     )
     args = parser.parse_args()
 
     typst = find_typst()
-    run_parity_check()
+
+    if args.application:
+        data_dir = APPLICATIONS_DIR / args.application / "data"
+        output_dir = APPLICATIONS_DIR / args.application
+        bootstrap_application_data(data_dir)
+        print(
+            f"Postulación: {args.application} "
+            f"(builders/cv/applications/{args.application}/, no versionado)\n"
+        )
+    else:
+        data_dir = DATA_DIR
+        output_dir = CV_DIR
+
+    run_parity_check(data_dir)
 
     if args.watch:
-        watch_all(typst)
+        watch_all(typst, data_dir, output_dir)
     else:
-        if not compile_all(typst):
+        if not compile_all(typst, data_dir, output_dir):
             sys.exit(1)
 
 
