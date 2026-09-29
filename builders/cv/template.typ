@@ -13,7 +13,7 @@
 #let clickable(url, body) = underline(text(fill: accent)[#link(url)[#body]])
 
 #let section(title, body) = {
-  block(above: 1em, below: 0.45em, breakable: false)[
+  block(above: 1em, below: 0.45em, breakable: false, sticky: true)[
     #text(size: 10.5pt, weight: "bold", tracking: 0.06em, fill: accent)[#upper(title)]
     #v(0.2em)
     #line(length: 100%, stroke: rule-stroke)
@@ -68,23 +68,28 @@
 }
 
 #let experience-entry(data, e) = {
-  block(below: 0.65em, breakable: false)[
-    #grid(
-      columns: (1fr, auto),
-      align: (left, right),
-      [
-        #strong[#e.role] \
-        #emph[#e.company -- #e.location]
-      ],
-      text(fill: muted, size: 9.5pt)[#e.start -- #e.end],
-    )
-    #if "summary" in e and e.summary != none [
-      #v(0.2em)
-      #text(style: "italic", size: 9.5pt)[#e.summary]
+  // The entry may split across pages, but only between bullets, and the header
+  // and summary always travel with the first bullet.
+  block(below: 0.65em)[
+    #block(breakable: false)[
+      #grid(
+        columns: (1fr, auto),
+        align: (left, right),
+        [
+          #strong[#e.role] \
+          #emph[#e.company -- #e.location]
+        ],
+        text(fill: muted, size: 9.5pt)[#e.start -- #e.end],
+      )
+      #if "summary" in e and e.summary != none [
+        #v(0.2em)
+        #text(style: "italic", size: 9.5pt)[#e.summary]
+      ]
+      #v(0.3em)
+      #bullet-item(e.bullets.first())
     ]
-    #v(0.3em)
-    #for b in e.bullets {
-      bullet-item(b)
+    #for b in e.bullets.slice(1) {
+      block(breakable: false, bullet-item(b))
     }
   ]
 }

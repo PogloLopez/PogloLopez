@@ -50,17 +50,22 @@
 }
 
 #let experience-entry(data, e) = {
-  block(below: 0.65em, breakable: false)[
-    #strong[#e.role] #text(fill: muted)[-- #e.company, #e.location]
-    #linebreak()
-    #text(size: 9.5pt, fill: muted)[#e.start -- #e.end]
-    #if "summary" in e and e.summary != none [
-      #v(0.18em)
-      #text(size: 9.5pt, style: "italic")[#e.summary]
+  // The entry may split across pages, but only between bullets, and the header
+  // and summary always travel with the first bullet.
+  block(below: 0.65em)[
+    #block(breakable: false)[
+      #strong[#e.role] #text(fill: muted)[-- #e.company, #e.location]
+      #linebreak()
+      #text(size: 9.5pt, fill: muted)[#e.start -- #e.end]
+      #if "summary" in e and e.summary != none [
+        #v(0.18em)
+        #text(size: 9.5pt, style: "italic")[#e.summary]
+      ]
+      #v(0.25em)
+      #bullet-item(e.bullets.first())
     ]
-    #v(0.25em)
-    #for b in e.bullets {
-      bullet-item(b)
+    #for b in e.bullets.slice(1) {
+      block(breakable: false, bullet-item(b))
     }
   ]
 }
