@@ -6,7 +6,17 @@
 </div>
 
 <p align="center">
-  I'm a <strong>Data Engineer</strong> specializing in automation and AI systems. I design and implement data architectures, MLOps infrastructure, automation pipelines, and bring AI to the core of operations — connecting extraction, modeling, orchestration, and interface into end-to-end products that turn manual processes into reliable, autonomous workflows.
+  I'm a <strong>Data Engineer</strong> specializing in automation and AI systems. I design and implement data architectures, MLOps infrastructure, automation pipelines, and bring AI to the core of operations, connecting extraction, modeling, orchestration, and interface into end-to-end products that turn manual processes into reliable, autonomous workflows.
+</p>
+
+<div align="center">
+  <a href="https://pablo.maieutik-data.com">
+    <img src="https://img.shields.io/badge/Portfolio-Five_systems,_with_live_demos-6480F0?style=for-the-badge&logo=vercel&logoColor=white" alt="Open the portfolio">
+  </a>
+</div>
+
+<p align="center">
+  <sub>Five production systems, each with an interactive walkthrough you can click through in the browser.</sub>
 </p>
 
 ---
@@ -19,13 +29,11 @@
 
 **Market Price Intelligence** Design and development of an internal analytics platform that forecasts wholesale agricultural product prices 52 weeks ahead using per-cluster ML models, benchmarking the market against internal prices and generating automated AI insights to anticipate purchasing decisions.
 
-**Agentic Development & AI-Assisted Engineering** I build software using AI agents as part of my own engineering practice — spec-driven development, agent harnesses, and iterative loops (Claude Code / Agent SDK) — and bring AI into operational pipelines, such as automated insight generation, to support decision-making.
+**Agentic Development & AI-Assisted Engineering** I build software using AI agents as part of my own engineering practice (spec-driven development, agent harnesses, and iterative loops with Claude Code / Agent SDK) and bring AI into operational pipelines, such as automated insight generation, to support decision-making.
 
-**Stock-Transfer Planning Automation** Built and shipped a web tool that purchasing analysts use to plan inventory transfers between stores — in production, cutting each transfer plan from hours to minutes and improving stock-reallocation decisions across stores.
+**Stock-Transfer Planning Automation** Built and shipped a web tool that purchasing analysts use to plan inventory transfers between stores, in production, cutting each transfer plan from roughly 4 hours to 2-5 minutes and improving stock-reallocation decisions across stores.
 
 **Centralized Orchestration & Infrastructure** Deployment of orchestration platforms (Dagster) on dedicated Linux servers to centralize, monitor, and automate critical corporate workflows, reducing operational overhead and standardizing failure monitoring.
-
-**DevSecOps & Governance** Implementation of version control standards, code quality frameworks, and AI-assisted agentic workflows (Claude AI) to standardize internal software development and guarantee code alignment.
 
 ---
 
@@ -63,7 +71,7 @@
 
 ![Power BI](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black) ![DAX](https://img.shields.io/badge/DAX-009EDC?style=for-the-badge&logo=powerbi&logoColor=white) ![Power Query](https://img.shields.io/badge/Power_Query-EE4C2C?style=for-the-badge&logo=powerbi&logoColor=white)
 
-### Development Workflow & DevSecOps
+### Development Workflow
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
@@ -83,9 +91,15 @@ While most of my corporate engineering repositories are private, my core achieve
 - **Market Price Intelligence Platform:** Built an internal analytics platform forecasting wholesale agricultural product prices 52 weeks ahead with per-cluster ML models (XGBoost/LightGBM) and automated AI-generated insights, benchmarking the market against internal prices.
 - **Stock-Transfer Planning Automation:** Built and shipped a web tool that purchasing analysts use to plan inventory transfers between stores, cutting each transfer plan from hours to minutes and improving stock-reallocation decisions.
 - **Centralized Linux Orchestration Server:** Migrated dispersed, manual tracking tasks into a single Dagster instance, automating job control and recovery while optimization saved approximately 4 operational hours weekly per user.
-- **Governance & Agentic DevSecOps:** Standardized development repositories via GitHub, implementing agentic coding workflows with Claude Code / Agent SDK to guarantee code alignment and consistent internal software production.
 
-Technical summaries and non-confidential project architecture details can be provided upon request.
+Each of these is written up in detail on the portfolio, with the architecture, the trade-offs and a
+working demo of the interface:
+
+<div align="center">
+  <a href="https://pablo.maieutik-data.com">
+    <img src="https://img.shields.io/badge/Read_the_case_studies-6480F0?style=for-the-badge&logo=vercel&logoColor=white" alt="Read the case studies">
+  </a>
+</div>
 
 ---
 
@@ -93,7 +107,8 @@ Technical summaries and non-confidential project architecture details can be pro
   <h2>📄 Resume / CV</h2>
 
   <p>
-    <strong>Download my resume:</strong>
+    <strong>Download the resume:</strong>
+    <br>
     <br>
     <a href="/assets/cv/Pablo-Lopez-CV-EN.pdf">
       <img src="https://img.shields.io/badge/CV_English-218BFF?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download English CV">
@@ -120,8 +135,10 @@ Technical summaries and non-confidential project architecture details can be pro
 
 <div align="center">
   <h2>Connect</h2>
+
   <a href="https://linkedin.com/in/pablo-a-lopez-s"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white"></a>
   <a href="mailto:poglolopez@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white"></a>
+  <a href="https://pablo.maieutik-data.com"><img src="https://img.shields.io/badge/Portfolio-6480F0?logo=vercel&logoColor=white"></a>
 </div>
 
 <p align="center">
