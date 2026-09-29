@@ -32,11 +32,11 @@ profile: >-
 
 skills:
   - category: 'Ingeniería de datos'
-    items: 'Python (Polars, SQLAlchemy, FastAPI), SQL (SQL Server, PostgreSQL), ETL Pipelines, Web Scraping (Selenium, Scrapy).'
+    items: 'Python (Polars, SQLAlchemy, FastAPI, sqlglot), SQL (SQL Server, PostgreSQL), ETL Pipelines, Web Scraping (Selenium, Scrapy).'
   - category: 'IA y sistemas agénticos'
-    items: 'Desarrollo multiagéntico, spec-driven development, harness engineering, MCP (Model Context Protocol), Claude Code / Agent SDK, prompt engineering.'
+    items: 'Desarrollo multiagéntico, spec-driven development, harness engineering, MCP (Model Context Protocol, FastMCP), OAuth 2.0, Claude Code / Agent SDK, prompt engineering.'
   - category: 'Infraestructura y orquestación'
-    items: 'Dagster, Docker, SSH/SFTP, Linux Server, Git/GitHub, modelado de flujos de datos.'
+    items: 'Dagster, Docker, Cloudflare Tunnel, SSH/SFTP, Linux Server, Git/GitHub, modelado de flujos de datos.'
   - category: 'Analítica'
     items: 'Power BI (DAX, Power Query), análisis de KPIs.'
   - category: 'Estrategia de negocio'
@@ -53,8 +53,10 @@ experience:
     summary: >-
       Lidero la ingeniería de datos y automatización de la compañía, impulsando de punta a punta la
       transición de procesos manuales y aislados hacia una arquitectura centralizada con
-      infraestructura MLOps, forecasting autónomo de demanda e inteligencia de precios, con
-      herramientas internas ya adoptadas por distintas áreas del negocio.
+      infraestructura MLOps, forecasting autónomo de demanda, inteligencia de precios y un
+      servidor MCP que conecta a Claude con el data warehouse para consultar y exportar datos sin
+      escribir SQL, con herramientas internas ya adoptadas por distintas áreas del negocio,
+      incluida la alta dirección.
     bullets:
       - lead: 'Infraestructura MLOps & Autonomía de Datos'
         text: >-
@@ -62,6 +64,12 @@ experience:
           autónoma de pronósticos de demanda, alcanzando una asertividad del *70-82%* según el
           cluster y contribuyendo de forma decisiva a reducir los productos *agotados* de un rango
           histórico del *12-20%* a cerca del *8%*.
+      - lead: 'Servidor MCP para el Data Warehouse (Claude)'
+        text: >-
+          Diseñé y puse en producción un servidor MCP que conecta a Claude con el data warehouse,
+          con el que la gerencia y los líderes de área consultan datos en
+          lenguaje natural y crean sus propios reportes. Mejoró la analítica y la
+          disponibilidad de información en toda la compañía.
       - lead: 'Inteligencia de Precios de Mercado'
         text: >-
           Diseñé y construí una plataforma analítica interna que anticipa los precios mayoristas de
@@ -81,11 +89,6 @@ experience:
           dedicado para unificar procesos dispersos; estructurado para automatizar ejecuciones
           manuales y optimizar el monitoreo de fallas, con una reducción estimada de \~4 horas
           semanales de carga operativa por usuario en los equipos de TI y Planeación.
-      - lead: 'Gobernanza y DevSecOps'
-        text: >-
-          Establecí el ecosistema de desarrollo empresarial en *GitHub*, implementando reglas de
-          código, control de versiones y *flujos de trabajo agénticos* con Claude AI para
-          estandarizar la producción de software interno.
   - company: 'Latin America Sourcing'
     location: 'Remoto'
     role: 'Business Analyst'
@@ -124,14 +127,15 @@ projects:
       text: >-
         Pronóstico semanal para más de 100.000 combinaciones de producto y tienda en 14 tiendas,
         alimentando el reabastecimiento. 19% menos error que el sistema que reemplazó.
+    - name: 'Servidor MCP para el Data Warehouse'
+      text: >-
+        Conecta a Claude con la bodega de datos para que los C-levels y los líderes de área
+        consulten y exporten información en lenguaje natural, con login corporativo y auditoría de
+        cada consulta.
     - name: 'Inteligencia de precios de mercado'
       text: >-
         Ingesta los boletines semanales de precios mayoristas del DANE, pronostica 52 semanas por
         producto y hace que un modelo escriba la lectura de cada serie.
-    - name: 'Asistente de IA sobre datos de negocio'
-      text: >-
-        Asistente en Telegram que responde preguntas de negocio en lenguaje natural, donde cada
-        cifra sale de una consulta real contra la bodega de datos.
     - name: 'Plataforma interna de operaciones'
       text: >-
         API central para el trabajo operativo recurrente. Planear un traslado pasó de unas 4 horas

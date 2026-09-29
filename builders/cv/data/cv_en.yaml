@@ -31,11 +31,11 @@ profile: >-
 
 skills:
   - category: 'Data Engineering'
-    items: 'Python (Polars, SQLAlchemy, FastAPI), SQL (SQL Server, PostgreSQL), ETL Pipelines, Web Scraping (Selenium, Scrapy).'
+    items: 'Python (Polars, SQLAlchemy, FastAPI, sqlglot), SQL (SQL Server, PostgreSQL), ETL Pipelines, Web Scraping (Selenium, Scrapy).'
   - category: 'AI & Agentic Systems'
-    items: 'Multi-agent development, spec-driven development, harness engineering, MCP (Model Context Protocol), Claude Code / Agent SDK, prompt engineering.'
+    items: 'Multi-agent development, spec-driven development, harness engineering, MCP (Model Context Protocol, FastMCP), OAuth 2.0, Claude Code / Agent SDK, prompt engineering.'
   - category: 'Infrastructure & Orchestration'
-    items: 'Dagster, Docker, SSH/SFTP, Linux Server, Git/GitHub, Data Flow Modeling.'
+    items: 'Dagster, Docker, Cloudflare Tunnel, SSH/SFTP, Linux Server, Git/GitHub, Data Flow Modeling.'
   - category: 'Analytics'
     items: 'Power BI (DAX, Power Query), KPI Analysis.'
   - category: 'Business Strategy'
@@ -52,8 +52,9 @@ experience:
     summary: >-
       Leading the company's data and automation engineering, driving end-to-end the shift from
       siloed, manual processes to a centralized architecture with in-house MLOps, autonomous demand
-      forecasting, and price intelligence, plus internal tools already adopted across multiple
-      business areas.
+      forecasting, price intelligence, and an MCP server connecting Claude to the data warehouse so
+      users can query and export data without writing SQL, plus internal tools already adopted
+      across multiple business areas, including senior leadership.
     bullets:
       - lead: 'MLOps Infrastructure & Data Autonomy'
         text: >-
@@ -61,6 +62,12 @@ experience:
           demand forecasting, reaching *70-82%* forecast accuracy depending on the cluster and
           driving a decisive reduction in *stockouts* from a historical *12-20%* range to around
           *8%*.
+      - lead: 'MCP Server for the Data Warehouse (Claude)'
+        text: >-
+          Designed and deployed an MCP server that connects Claude to the data
+          warehouse, letting C-levels and team leaders query data in natural language,
+          generating their own reports. It improved analytics and information
+          availability across the company.
       - lead: 'Market Price Intelligence'
         text: >-
           Designed and built an internal analytics platform that forecasts wholesale agricultural
@@ -78,11 +85,6 @@ experience:
           unify dispersed processes. Designed to automate manual executions and optimize failure
           monitoring, resulting in an estimated reduction of \~4 operational hours per week per
           user for the IT and Demand Planning teams.
-      - lead: 'Governance & DevSecOps'
-        text: >-
-          Established the corporate development ecosystem on *GitHub*, implementing coding rules,
-          version control, and *agentic workflows* using Claude AI to standardize internal
-          software production.
   - company: 'Latin America Sourcing'
     location: 'Remote'
     role: 'Business Analyst'
@@ -120,14 +122,14 @@ projects:
       text: >-
         Weekly forecasts for 100,000+ product and store combinations across 14 stores, feeding
         replenishment. 19% lower error than the system it replaced.
+    - name: 'MCP server for the data warehouse'
+      text: >-
+        Connects Claude to the data warehouse so C-levels and area leaders can query and export data
+        in plain language, with corporate login and an audit trail of every query.
     - name: 'Market price intelligence'
       text: >-
         Ingests Colombia's weekly wholesale price bulletins, forecasts 52 weeks per product, and
         has a model write the reading of each series.
-    - name: 'AI assistant for business data'
-      text: >-
-        Telegram assistant answering business questions in plain language, with every figure
-        traced back to a real query against the warehouse.
     - name: 'Internal operations platform'
       text: >-
         Central API for recurring operations work. Transfer planning went from roughly 4 hours to
