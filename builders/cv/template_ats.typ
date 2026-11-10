@@ -112,8 +112,8 @@
 }
 
 #let render(data) = {
-  set page(paper: "us-letter", margin: (x: 2cm, y: 1.8cm))
-  set text(font: ("Arial", "Liberation Sans", "Calibri", "Segoe UI"), size: 10.5pt, fill: ink, lang: "en")
+  set page(paper: "us-letter", margin: (x: 1.8cm, y: 1.5cm))
+  set text(font: ("Arial", "Liberation Sans", "Calibri", "Segoe UI"), size: 10pt, fill: ink, lang: "en")
   set par(justify: false, leading: 0.6em)
 
   header(data)
