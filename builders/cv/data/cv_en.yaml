@@ -100,6 +100,24 @@ experience:
         text: >-
           Analyzed client requests, documented commercial interactions, and generated operational
           insights. Automated supplier classification processes using custom Python scripts.
+  - company: 'Independent'
+    location: 'Manizales, Colombia'
+    role: 'Independent Financial Analyst'
+    start: 'Jan 2024'
+    end: 'Dec 2024'
+    summary: null
+    bullets:
+      - lead: null
+        text: >-
+          Technical and market analysis to trade with my own capital.
+      - lead: null
+        text: >-
+          Tracked my own performance in Excel (trade metrics and correlation analysis), with
+          systematic logging of every trade and periodic reviews to adjust my rules.
+      - lead: null
+        text: >-
+          Risk management: stop losses, daily loss and drawdown limits, and portfolio
+          diversification.
   - company: 'Industria Licorera de Caldas'
     location: 'Manizales, Colombia'
     role: 'Business Intelligence Internship'
