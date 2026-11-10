@@ -105,6 +105,25 @@ experience:
           Análisis de solicitudes de clientes; seguimiento y documentación de interacciones
           comerciales en bases de datos; generación de insights operativos; automatización de
           procesos de clasificación de proveedores con scripts en Python.
+  - company: 'Independiente'
+    location: 'Manizales, Colombia'
+    role: 'Analista financiero independiente'
+    start: 'Ene 2024'
+    end: 'Dic 2024'
+    summary: null
+    bullets:
+      - lead: null
+        text: >-
+          Análisis técnico y de mercado para operar con capital propio.
+      - lead: null
+        text: >-
+          Seguimiento de mi propio desempeño en Excel (métricas de las operaciones y análisis de
+          correlaciones), con registro sistemático de cada operación y revisión periódica para
+          ajustar mis reglas.
+      - lead: null
+        text: >-
+          Gestión de riesgo por operación: stop loss, límites de pérdida diaria y de drawdown, y
+          diversificación del portafolio.
   - company: 'Industria Licorera de Caldas'
     location: 'Manizales, Colombia'
     role: 'Práctica empresarial en Business Intelligence'
